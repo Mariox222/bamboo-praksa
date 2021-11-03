@@ -1,211 +1,453 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanDoo</title>
+    <link rel="stylesheet" href="sass/style.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header__title-container">PanDoo</div>
-        <a class="header__link" href="http://fillme.com">About</a>
-        <a class="header__link" href="http://fillme.com">Pricing</a>
-        <a class="header__link" href="http://fillme.com">Testimonials</a>
-        <a class="header__link" href="http://fillme.com">Blog</a>
-        <a class="header__link" href="http://fillme.com">Contact</a>
-        <button class="header__button">
-            GET IT NOW
-        </button>
+        <div class="header__title-container">
+            <svg class="header__title-container__svg" width="120" height="52" viewBox="0 0 120 52" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1192:103)">
+                    <path d="M120 42.25H0V52H120V42.25Z" fill="#87DE87" />
+                    <path d="M120 0.247803H0V42.25H120V0.247803Z" fill="white" />
+                    <path
+                        d="M6.31451 28.4813V36.8668H10.1763C11.6055 36.8668 12.7104 36.5031 13.4908 35.7757C14.2713 35.0482 14.6615 34.0118 14.6615 32.6666C14.6615 31.3313 14.2713 30.2999 13.4908 29.5724C12.7104 28.845 11.6055 28.4813 10.1763 28.4813H6.31451ZM3.24329 26H10.1763C12.7205 26 14.6413 26.568 15.9387 27.704C17.2462 28.8301 17.9 30.4842 17.9 32.6666C17.9 34.8688 17.2462 36.533 15.9387 37.659C14.6413 38.7851 12.7205 39.3481 10.1763 39.3481H6.31451V48.3165H3.24329V26Z"
+                        fill="#333333" />
+                    <path
+                        d="M28.2387 39.9011C25.9784 39.9011 24.4124 40.1552 23.5407 40.6634C22.669 41.1717 22.2331 42.0386 22.2331 43.2643C22.2331 44.2409 22.5575 45.0181 23.2062 45.5961C23.865 46.1641 24.757 46.4481 25.8821 46.4481C27.4329 46.4481 28.6746 45.91 29.6071 44.8338C30.5497 43.7476 31.021 42.3077 31.021 40.514V39.9011H28.2387ZM33.8186 38.7651V48.3165H31.021V45.7755C30.3825 46.7919 29.5868 47.5442 28.634 48.0325C27.6812 48.5108 26.5156 48.75 25.1371 48.75C23.3937 48.75 22.005 48.2717 20.9712 47.3151C19.9474 46.3485 19.4355 45.058 19.4355 43.4437C19.4355 41.5603 20.0741 40.1403 21.3513 39.1837C22.6385 38.227 24.5543 37.7487 27.0984 37.7487H31.021V37.4797C31.021 36.2141 30.5953 35.2375 29.7439 34.5499C28.9026 33.8524 27.7167 33.5037 26.1862 33.5037C25.2131 33.5037 24.2654 33.6182 23.343 33.8474C22.4206 34.0766 21.5337 34.4204 20.6823 34.8788V32.3377C21.706 31.9491 22.6994 31.6601 23.6623 31.4708C24.6252 31.2715 25.5628 31.1718 26.475 31.1718C28.9381 31.1718 30.7778 31.7996 31.9941 33.0552C33.2104 34.3108 33.8186 36.2141 33.8186 38.7651V38.7651Z"
+                        fill="#333333" />
+                    <path
+                        d="M53.736 38.2121V48.3165H50.9385V38.3017C50.9385 36.7173 50.6243 35.5315 49.9958 34.7443C49.3674 33.9571 48.4247 33.5634 47.1679 33.5634C45.6576 33.5634 44.4666 34.0367 43.5949 34.9834C42.7232 35.9301 42.2874 37.2206 42.2874 38.8548V48.3165H39.4746V31.5754H42.2874V34.1762C42.9563 33.1698 43.7419 32.4174 44.644 31.9192C45.5562 31.421 46.6053 31.1718 47.7912 31.1718C49.7475 31.1718 51.2273 31.7697 52.2308 32.9655C53.2343 34.1513 53.736 35.9002 53.736 38.2121Z"
+                        fill="#333333" />
+                    <path
+                        d="M62.5087 28.4813V45.8352H66.2185C69.3506 45.8352 71.6413 45.1377 73.0907 43.7426C74.5503 42.3475 75.2801 40.1453 75.2801 37.1358C75.2801 34.1464 74.5503 31.9591 73.0907 30.5739C71.6413 29.1789 69.3506 28.4813 66.2185 28.4813H62.5087ZM59.4375 26H65.7472C70.1462 26 73.3746 26.9019 75.4322 28.7055C77.4898 30.4992 78.5186 33.3093 78.5186 37.1358C78.5186 40.9823 77.4847 43.8074 75.417 45.6111C73.3492 47.4147 70.1259 48.3165 65.7472 48.3165H59.4375V26Z"
+                        fill="#333333" />
+                    <path
+                        d="M89.8912 33.5036C88.391 33.5036 87.2051 34.0816 86.3334 35.2375C85.4617 36.3835 85.0259 37.958 85.0259 39.9609C85.0259 41.9639 85.4567 43.5433 86.3182 44.6993C87.1899 45.8452 88.3809 46.4182 89.8912 46.4182C91.3812 46.4182 92.562 45.8402 93.4337 44.6843C94.3054 43.5284 94.7413 41.9539 94.7413 39.9609C94.7413 37.9779 94.3054 36.4084 93.4337 35.2525C92.562 34.0866 91.3812 33.5036 89.8912 33.5036ZM89.8912 31.1718C92.3238 31.1718 94.2345 31.9491 95.6231 33.5036C97.0118 35.0581 97.7061 37.2106 97.7061 39.9609C97.7061 42.7013 97.0118 44.8537 95.6231 46.4182C94.2345 47.9728 92.3238 48.75 89.8912 48.75C87.4484 48.75 85.5327 47.9728 84.144 46.4182C82.7655 44.8537 82.0763 42.7013 82.0763 39.9609C82.0763 37.2106 82.7655 35.0581 84.144 33.5036C85.5327 31.9491 87.4484 31.1718 89.8912 31.1718Z"
+                        fill="#333333" />
+                    <path
+                        d="M108.942 33.5036C107.442 33.5036 106.256 34.0816 105.384 35.2375C104.513 36.3835 104.077 37.958 104.077 39.9609C104.077 41.9639 104.507 43.5433 105.369 44.6993C106.241 45.8452 107.432 46.4182 108.942 46.4182C110.432 46.4182 111.613 45.8402 112.485 44.6843C113.356 43.5284 113.792 41.9539 113.792 39.9609C113.792 37.9779 113.356 36.4084 112.485 35.2525C111.613 34.0866 110.432 33.5036 108.942 33.5036ZM108.942 31.1718C111.375 31.1718 113.285 31.9491 114.674 33.5036C116.063 35.0581 116.757 37.2106 116.757 39.9609C116.757 42.7013 116.063 44.8537 114.674 46.4182C113.285 47.9728 111.375 48.75 108.942 48.75C106.499 48.75 104.583 47.9728 103.195 46.4182C101.816 44.8537 101.127 42.7013 101.127 39.9609C101.127 37.2106 101.816 35.0581 103.195 33.5036C104.583 31.9491 106.499 31.1718 108.942 31.1718Z"
+                        fill="#333333" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1192:103">
+                        <rect width="120" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="header__grid">
+            <a class="header__grid__link" href="http://fillme.com">About</a>
+            <a class="header__grid__link" href="http://fillme.com">Pricing</a>
+            <a class="header__grid__link" href="http://fillme.com">Testimonials</a>
+            <a class="header__grid__link" href="http://fillme.com">Blog</a>
+            <a class="header__grid__link" href="http://fillme.com">Contact</a>
+            <button class="header__grid__button">
+                GET IT NOW
+            </button>
+        </div>
+
     </header>
-
-    <section class="section1">
-        <div class="card1">
-            <div class="card1__rectangle"></div>
-            <article class="card1__article">
-                <h1 class="card1__article__h1">Hero Title</h1>
-                <p class="card1__article__p">
-                    I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' 
-                    swords is no basis for a system of government. Supreme executive power derives 
-                    from a mandate from the masses, not from some farcical aquatic ceremony.
-                </p>
-            </article>
-        </div>
-    </section>
-    
-    <section class="section2">
-        <h1 class="section2__h1">
-            Section title
-        </h1>
-
-        <div class="card2-container">
-            <div class="card2">
-                <article class="card2__article">
-                    <div class="card2__article__icon-container"></div>
-                    <h1 class="card2__article__h1">Card Title</h1>
-                    <h2 class="card2__article__h2">Card Subtitle</h2>
-                    <p class="card2__article__p">
-                        You don't frighten us, English pig dogs. Go and boil your bottoms, you 
-                        sons of a silly person. I blow my nose at you, so-called "Arthur King," 
-                        you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? 
-                        You yellow bastards! Come back here and take what's coming to you! 
-                        I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
-                        By exploiting the workers.
+    <div class="site-content">
+        <section class="section1">
+            <div class="card1">
+                <div class="card1__rectangle"></div>
+                <article class="card1__article">
+                    <h1 class="card1__article__h1">Hero Title</h1>
+                    <p class="card1__article__p">
+                        I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin'
+                        swords is no basis for a system of government. Supreme executive power derives
+                        from a mandate from the masses, not from some farcical aquatic ceremony.
                     </p>
                 </article>
             </div>
-            <div class="card2">
-                <article class="card2__article">
-                    <div class="card2__article__icon-container"></div>
-                    <h1 class="card2__article__h1">Card Title</h1>
-                    <h2 class="card2__article__h2">Card Subtitle</h2>
-                    <p class="card2__article__p">
-                        You don't frighten us, English pig dogs. Go and boil your bottoms, you 
-                        sons of a silly person. I blow my nose at you, so-called "Arthur King," 
-                        you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? 
-                        You yellow bastards! Come back here and take what's coming to you! 
-                        I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
-                        By exploiting the workers.
+        </section>
+
+        <section class="section2">
+            <h1 class="section2__h1">
+                Section title
+            </h1>
+
+            <div class="card2-container">
+                <div class="card2">
+                    <section class="card2__sec1">
+                        <div class="card2__sec1-icon-container">
+                            <svg width="74" height="74" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37 2C50.563 2 62.315 9.72 68.126 21" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M72 37C72 31.233 70.596 25.797 68.126 21" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M27.1801 70.588C30.2951 71.504 33.5881 72 37.0001 72C56.3301 72 72.0001 56.33 72.0001 37"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 37C2 17.67 17.67 2 37 2" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.956 45.102C2.335 42.501 2 39.791 2 37" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 37H72" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M68.138 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M32 52.999L61 53" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37 10V64" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.578 37C18.577 31.543 19.694 26.09 21.912 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19.084 43.341C18.748 41.242 18.578 39.121 18.578 37" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M55.431 37C55.431 31.543 54.31 26.09 52.09 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M37 2L30.284 8.716C26.637 12.363 23.855 16.543 21.912 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M37 2L43.716 8.716C47.363 12.363 50.147 16.542 52.091 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M30.665 65.665L37 72L43.716 65.284C47.363 61.637 50.147 57.457 52.091 52.999C54.31 47.91 55.432 42.456 55.432 36.999"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M23.412 62.837C25.003 61.237 25.787 59.025 25.563 56.765C25.211 53.212 22.259 50.315 18.697 50.026C17.099 49.896 15.525 50.27 14.178 51.086C13.944 51.228 13.658 51.228 13.423 51.086C11.629 49.999 9.43502 49.696 7.31602 50.323C4.87702 51.044 2.94002 53.026 2.27402 55.481C1.54602 58.167 2.29702 60.935 4.18902 62.838L11.698 71.073C12.236 71.662 13.002 72 13.8 72C14.598 72 15.364 71.662 15.902 71.072L23.412 62.837Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+                                <path d="M13 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="card2__sec1__titles">
+                            <h1 class="card2__sec1__titles__h1">Card Title</h1>
+                            <h2 class="card2__sec1__titles__h2">Card Subtitle</h2>
+                        </div>
+
+                    </section>
+                    <div class="card2__sec2">
+                        <p class="card2__sec2__p">
+                            You don't frighten us, English pig dogs. Go and boil your bottoms, you
+                            sons of a silly person. I blow my nose at you, so-called "Arthur King,"
+                            you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh?
+                            You yellow bastards! Come back here and take what's coming to you!
+                            I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
+                            By exploiting the workers.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="card2">
+                    <section class="card2__sec1">
+                        <div class="card2__sec1-icon-container">
+                            <svg width="74" height="58" viewBox="0 0 74 58" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M68 40C70.209 40 72 38.209 72 36V6C72 3.791 70.209 2 68 2H6C3.791 2 2 3.791 2 6V36C2 38.209 3.791 40 6 40H68Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+                                <path d="M25 8V34" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M49 8V34" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M8 21H66" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M51 51H17C14.791 51 13 49.209 13 47V40" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M54 46H55C56.657 46 58 47.343 58 49V53C58 54.657 56.657 56 55 56H54C52.343 56 51 54.657 51 53V49C51 47.343 52.343 46 54 46Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M61 48H57.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M61 54H57.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="card2__sec1__titles">
+                            <h1 class="card2__sec1__titles__h1">Card Title</h1>
+                            <h2 class="card2__sec1__titles__h2">Card Subtitle</h2>
+                        </div>
+
+                    </section>
+                    <div class="card2__sec2">
+                        <p class="card2__sec2__p">
+                            You don't frighten us, English pig dogs. Go and boil your bottoms, you
+                            sons of a silly person. I blow my nose at you, so-called "Arthur King,"
+                            you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh?
+                            You yellow bastards! Come back here and take what's coming to you!
+                            I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
+                            By exploiting the workers.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="card2">
+                    <section class="card2__sec1">
+                        <div class="card2__sec1-icon-container">
+                            <svg width="51" height="66" viewBox="0 0 51 66" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 32V48C24 50.209 22.209 52 20 52H11.5C9.567 52 8 53.567 8 55.5C8 57.433 9.567 59 11.5 59H29"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M24 32C26.2091 32 28 30.2091 28 28C28 25.7909 26.2091 24 24 24C21.7909 24 20 25.7909 20 28C20 30.2091 21.7909 32 24 32Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M23.9999 24V4.40099C23.9999 1.41999 19.6459 1.11099 19.2239 4.06199L18.1679 12.634C18.0589 13.519 18.2489 14.416 18.7079 15.181L23.9999 24Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M20.5359 30L3.56192 39.8C0.980924 41.29 2.88992 45.216 5.65592 44.106L13.6079 40.734C14.4289 40.386 15.1109 39.773 15.5439 38.993L20.5359 30Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M27.4639 30L44.4379 39.8C47.0189 41.29 49.4639 37.674 47.1199 35.834L40.2239 30.633C39.5119 30.096 38.6399 29.812 37.7479 29.827L27.4639 30Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M32 54H33C34.657 54 36 55.343 36 57V61C36 62.657 34.657 64 33 64H32C30.343 64 29 62.657 29 61V57C29 55.343 30.343 54 32 54Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M39.0001 56H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.0001 62H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="card2__sec1__titles">
+                            <h1 class="card2__sec1__titles__h1">Card Title</h1>
+                            <h2 class="card2__sec1__titles__h2">Card Subtitle</h2>
+                        </div>
+
+                    </section>
+                    <div class="card2__sec2">
+                        <p class="card2__sec2__p">
+                            You don't frighten us, English pig dogs. Go and boil your bottoms, you
+                            sons of a silly person. I blow my nose at you, so-called "Arthur King,"
+                            you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh?
+                            You yellow bastards! Come back here and take what's coming to you!
+                            I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
+                            By exploiting the workers.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <h1 class="section3__h1">Section title</h1>
+
+            <div class="section3__subsection1">
+                <article class="section3__subsection1__article">
+                    <h1 class="section3__subsection1__article__h1">Subsection Title</h1>
+                    <p class="section3__subsection1__article__p">
+                        You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person.
+                        I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
+                        Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to
+                        you!
+                        I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the
+                        workers.
+                        By hanging on to outdated imperialist dogma which perpetuates the economic and social
+                        differences in our society.
+                    </p>
+                    <p class="section3__subsection1__article__p">
+                        Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering
+                        samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I,
+                        Arthur,
+                        was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the
+                        system.
+                        Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no
+                        more,
+                        you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a
+                        hamster and your father smelt of elderberries!
+                    </p>
+                    <p class="section3__subsection1__article__p">
+                        What is the capital of Assyria? Listen, strange women lyin' in ponds distributin'
+                        swords is no basis for a system of government. Supreme executive power derives
+                        from a mandate from the masses, not from some farcical aquatic ceremony.
                     </p>
                 </article>
+                <div class="card3">
+                    <img class="card3__image" src="images/image1.png" alt="no image">
+                    <div class="card3__rectangle"></div>
+                </div>
             </div>
-            <div class="card2">
-                <article class="card2__article">
-                    <div class="card2__article__icon-container"></div>
-                    <h1 class="card2__article__h1">Card Title</h1>
-                    <h2 class="card2__article__h2">Card Subtitle</h2>
-                    <p class="card2__article__p">
-                        You don't frighten us, English pig dogs. Go and boil your bottoms, you 
-                        sons of a silly person. I blow my nose at you, so-called "Arthur King," 
-                        you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? 
-                        You yellow bastards! Come back here and take what's coming to you! 
-                        I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh?
-                        By exploiting the workers.
+
+            <div class="section3__subsection2">
+                <article class="section3__subsection2__article">
+                    <h1 class="section3__subsection2__article__h1">Subsection Title</h1>
+                    <p class="section3__subsection2__article__p">
+                        You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person.
+                        I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
+                        Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to
+                        you!
+                        I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the
+                        workers.
+                        By hanging on to outdated imperialist dogma which perpetuates the economic and social
+                        differences in our society.
+                    </p>
+                    <p class="section3__subsection2__article__p">
+                        Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering
+                        samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I,
+                        Arthur,
+                        was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the
+                        system.
+                        Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no
+                        more,
+                        you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a
+                        hamster and your father smelt of elderberries!
+                    </p>
+                    <p class="section3__subsection2__article__p">
+                        What is the capital of Assyria? Listen, strange women lyin' in ponds distributin'
+                        swords is no basis for a system of government. Supreme executive power derives
+                        from a mandate from the masses, not from some farcical aquatic ceremony.
                     </p>
                 </article>
+                <div class="card3">
+                    <div class="card3__rectangle"></div>
+                    <img class="card3__image" src="images/image2.png" alt="no image">
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="section3">
-        <h1 class="section3__h1">Section title</h1>
-        
-        <div class="section3__subsection">
-            <article class="section3__subsection__article">
-                <h1 class="section3__subsection__article__h1">Subsection Title</h1>
-                <p class="section3__subsection__article__p">
-                    You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person.
-                    I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. 
-                    Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! 
-                    I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. 
-                    By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.
-                </p>
-                <p class="section3__subsection__article__p">
-                    Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering 
-                    samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, 
-                    was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. 
-                    Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, 
-                    you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a 
-                    hamster and your father smelt of elderberries!
-                </p>
-                <p class="section3__subsection__article__p">
-                    What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' 
-                    swords is no basis for a system of government. Supreme executive power derives 
-                    from a mandate from the masses, not from some farcical aquatic ceremony.
-                </p>
-            </article>  
-            <div class="card3">
-                <img class="card3__image" src="images/image1.png" alt="no image">
-                <div class="card3__rectangle"></div>
+            <div class="section3__button-container">
+                <button class="section3__button">LEARN MORE</button>
             </div>
-        </div>
-
-        <div class="section3__subsection">
-            <article class="section3__subsection__article">
-                <h1 class="section3__subsection__article__h1">Subsection Title</h1>
-                <p class="section3__subsection__article__p">
-                    You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person.
-                    I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. 
-                    Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! 
-                    I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. 
-                    By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.
-                </p>
-                <p class="section3__subsection__article__p">
-                    Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering 
-                    samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, 
-                    was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. 
-                    Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, 
-                    you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a 
-                    hamster and your father smelt of elderberries!
-                </p>
-                <p class="section3__subsection__article__p">
-                    What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' 
-                    swords is no basis for a system of government. Supreme executive power derives 
-                    from a mandate from the masses, not from some farcical aquatic ceremony.
-                </p>
-            </article>  
-            <div class="card3">
-                <div class="card3__rectangle"></div>
-                <img class="card3__image" src="images/image2.png" alt="no image">
-            </div>
-        </div>
-
-        <button class="section3__button">LEARN MORE</button>
-    </section>
-
-    <section class="section4">
-        <h1 class="section4__h1">Section title</h1>
-        <p class="section4__p">
-            You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. 
-            I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
-        </p>
-        <div class="section4__search-bar">
-            <input type="text" placeholder="example@gmail.com" class="section4__search-bar__input"> 
-            <button class="search-bar__button">SEND</button> 
-        </div>
-    </section>
-
-    <footer class="footer1">
-        <div class="footer1__company-name">
-            <p class="footer1__company-name__p">PanDoo</p>
-        </div>
-        <section class="footer1__adresses-grid">
-            <address class="footer1__adresses-grid__addy">
-                <em class="footer1__adresses-grid__addy__em">Company Name</em> <br>
-                Kralja Zvonimira 35 <br>
-                21000 Split <br>
-                hello@companyname.com <br>
-                +385 21 323 044 
-            </address>
-            <address class="footer1__adresses-grid__addy">
-                <em class="footer1__adresses-grid__addy__em">Products</em> <br>
-                Pricing <br>
-                Testimonials <br>
-                Get it Now
-            </address>
-            <address class="footer1__adresses-grid__addy">
-                <em class="footer1__adresses-grid__addy__em">Company</em> <br>
-                About <br>
-                Blog <br>
-                Contact
-            </address>
 
         </section>
-    </footer>
 
-    <footer class="footer2">
-        <div class="footer2__copyright">
-            2020 © PanDoo 
-        </div>
-        <div class="footer2__grid">
-            <a href="someadres.com" class="footer2__grid__link">
-                GDPR
-            </a>
-            <a href="someadres.com" class="footer2__grid__link">
-                Privacy
-            </a>
-        </div>
-    </footer>
+        <section class="section4">
+            <div class="section4__text-box">
+                <h1 class="section4__text-box__h1">Section title</h1>
+                <p class="section4__text-box__p">
+                    You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person.
+                    I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
+                </p>
+            </div>
+            <div class="section4__sch-box">
+                <div class="section4__sch-box__search-bar">
+                    <input type="text" placeholder="example@gmail.com" class="section4__search-bar__input">
 
+                    <button class="section4__sch-box__search-bar__button">SEND</button>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer1">
+            <div class="footer1__content">
+                <div class="footer1__content__company-name">
+                    <svg width="211" height="44" viewBox="0 0 211 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.73445 5.46752V21.0506H12.911C15.5669 21.0506 17.6201 20.3747 19.0704 19.0229C20.5208 17.671 21.246 15.7451 21.246 13.2451C21.246 10.7637 20.5208 8.84706 19.0704 7.49522C17.6201 6.14341 15.5669 5.46752 12.911 5.46752H5.73445ZM0.0270996 0.856445H12.911C17.6389 0.856445 21.2083 1.91199 23.6194 4.02307C26.0492 6.11562 27.2642 9.18965 27.2642 13.2451C27.2642 17.3377 26.0492 20.4303 23.6194 22.5228C21.2083 24.6154 17.6389 25.6616 12.911 25.6616H5.73445V42.328H0.0270996V0.856445Z"
+                            fill="#333333" />
+                        <path
+                            d="M46.4769 26.6892C42.2764 26.6892 39.3662 27.1614 37.7463 28.1058C36.1264 29.0503 35.3165 30.6613 35.3165 32.9391C35.3165 34.7539 35.9192 36.1983 37.1247 37.2724C38.3491 38.3279 40.0067 38.8557 42.0975 38.8557C44.9794 38.8557 47.2868 37.8557 49.0198 35.8557C50.7715 33.8372 51.6474 31.1614 51.6474 27.8281V26.6892H46.4769ZM56.8462 24.5781V42.3278H51.6474V37.6057C50.4607 39.4946 48.9821 40.8927 47.2115 41.8C45.4409 42.6889 43.2747 43.1333 40.713 43.1333C37.4732 43.1333 34.8927 42.2445 32.9714 40.4668C31.0689 38.6705 30.1177 36.2724 30.1177 33.2724C30.1177 29.7725 31.3044 27.1337 33.6777 25.3559C36.0699 23.5782 39.6299 22.6892 44.3578 22.6892H51.6474V22.1893C51.6474 19.8375 50.8563 18.0227 49.2741 16.7449C47.7107 15.4487 45.5068 14.8006 42.6626 14.8006C40.8543 14.8006 39.0931 15.0135 37.379 15.4394C35.6649 15.8653 34.0168 16.5042 32.4345 17.3561V12.6339C34.337 11.9117 36.1829 11.3747 37.9724 11.0228C39.7618 10.6525 41.5041 10.4673 43.1994 10.4673C47.7766 10.4673 51.1953 11.6339 53.4557 13.9672C55.716 16.3005 56.8462 19.8375 56.8462 24.5782V24.5781Z"
+                            fill="#333333" />
+                        <path
+                            d="M93.8594 23.5504V42.3278H88.6606V23.717C88.6606 20.7726 88.0767 18.569 86.9089 17.1061C85.741 15.6431 83.9892 14.9116 81.6536 14.9116C78.847 14.9116 76.6337 15.7912 75.0138 17.5504C73.3939 19.3097 72.584 21.7078 72.584 24.7448V42.3278H67.3569V11.2172H72.584V16.0505C73.8271 14.1801 75.2869 12.782 76.9634 11.8561C78.6586 10.9302 80.6082 10.4673 82.812 10.4673C86.4474 10.4673 89.1974 11.5783 91.0622 13.8005C92.927 16.0042 93.8594 19.2541 93.8594 23.5504Z"
+                            fill="#333333" />
+                        <path
+                            d="M110.162 5.46728V37.7167H117.056C122.876 37.7167 127.133 36.4204 129.827 33.8279C132.539 31.2353 133.896 27.1428 133.896 21.5503C133.896 15.9948 132.539 11.9301 129.827 9.35609C127.133 6.76357 122.876 5.46728 117.056 5.46728H110.162ZM104.455 0.856201H116.18C124.355 0.856201 130.354 2.53214 134.178 5.88394C138.002 9.21721 139.914 14.4393 139.914 21.5503C139.914 28.6984 137.992 33.9483 134.15 37.3001C130.307 40.6519 124.317 42.3278 116.18 42.3278H104.455V0.856201Z"
+                            fill="#333333" />
+                        <path
+                            d="M161.048 14.8005C158.26 14.8005 156.056 15.8745 154.436 18.0226C152.816 20.1522 152.006 23.0782 152.006 26.8003C152.006 30.5225 152.807 33.4576 154.408 35.6057C156.028 37.7353 158.241 38.8002 161.048 38.8002C163.817 38.8002 166.011 37.7261 167.631 35.5779C169.251 33.4298 170.061 30.504 170.061 26.8003C170.061 23.1152 169.251 20.1986 167.631 18.0504C166.011 15.8838 163.817 14.8005 161.048 14.8005ZM161.048 10.4673C165.568 10.4673 169.119 11.9116 171.7 14.8005C174.28 17.6893 175.571 21.6893 175.571 26.8003C175.571 31.8928 174.28 35.8928 171.7 38.8002C169.119 41.689 165.568 43.1333 161.048 43.1333C156.508 43.1333 152.948 41.689 150.368 38.8002C147.806 35.8928 146.525 31.8928 146.525 26.8003C146.525 21.6893 147.806 17.6893 150.368 14.8005C152.948 11.9116 156.508 10.4673 161.048 10.4673Z"
+                            fill="#333333" />
+                        <path
+                            d="M196.45 14.8005C193.663 14.8005 191.459 15.8745 189.839 18.0226C188.219 20.1522 187.409 23.0782 187.409 26.8003C187.409 30.5225 188.21 33.4576 189.811 35.6057C191.431 37.7353 193.644 38.8002 196.45 38.8002C199.219 38.8002 201.414 37.7261 203.034 35.5779C204.654 33.4298 205.464 30.504 205.464 26.8003C205.464 23.1152 204.654 20.1986 203.034 18.0504C201.414 15.8838 199.219 14.8005 196.45 14.8005ZM196.45 10.4673C200.971 10.4673 204.522 11.9116 207.102 14.8005C209.683 17.6893 210.973 21.6893 210.973 26.8003C210.973 31.8928 209.683 35.8928 207.102 38.8002C204.522 41.689 200.971 43.1333 196.45 43.1333C191.911 43.1333 188.351 41.689 185.77 38.8002C183.209 35.8928 181.928 31.8928 181.928 26.8003C181.928 21.6893 183.209 17.6893 185.77 14.8005C188.351 11.9116 191.911 10.4673 196.45 10.4673Z"
+                            fill="#333333" />
+                    </svg>
+                </div>
+                <section class="footer1__content__adresses-grid">
+                    <address class="footer1__content__adresses-grid__addy">
+                        <em class="footer1__content__adresses-grid__addy__em">Company Name</em> <br>
+                        <span>Kralja Zvonimira 35 </span><br>
+                        <span>21000 Split </span><br>
+                        <span>hello@companyname.com </span><br>
+                        <span>+385 21 323 044 </span>
+                    </address>
+                    <address class="footer1__content__adresses-grid__addy">
+                        <em class="footer1__content__adresses-grid__addy__em">Products</em> <br>
+                        <a>Pricing</a> <br>
+                        <a>Testimonials</a> <br>
+                        <a>Get it Now</a>
+                    </address>
+                    <address class="footer1__content__adresses-grid__addy">
+                        <em class="footer1__content__adresses-grid__addy__em">Company</em> <br>
+                        <a>About</a> <br>
+                        <a>Blog</a> <br>
+                        <a>Contact</a>
+                    </address>
+
+                    <div class="footer1__content__adresses-grid__follow-us">
+                        <em class="footer1__content__adresses-grid__follow-us__em">Follow Us</em>
+                        <div class="footer1__content__adresses-grid__follow-us__icon-box">
+                            <div class="footer1__content__adresses-grid__follow-us__icon-box__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.5799 25.2342V15.9993H11.7031V12.9382H13.5799V11.087C13.5799 8.5901 14.3264 6.78955 17.0604 6.78955H20.3128V9.84439H18.0226C16.8757 9.84439 16.6144 10.6065 16.6144 11.4046V12.9382H20.1437L19.662 15.9993H16.6144V25.2342H13.5799Z"
+                                        fill="#FEFEFE" />
+                                </svg>
+                            </div>
+                            <div class="footer1__content__adresses-grid__follow-us__icon-box__icon">
+                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.8944 1.833C14.2496 1.09993 13.3309 0.632875 12.3141 0.61595C10.3618 0.583456 8.77892 2.23312 8.77892 4.30042C8.77892 4.59382 8.8102 4.87993 8.8705 5.15459C5.93249 4.96401 3.32762 3.4341 1.58413 1.12795C1.27983 1.68055 1.10546 2.32643 1.10546 3.01831C1.10546 4.32809 1.72956 5.49051 2.67811 6.17685C2.09864 6.15127 1.55354 5.97585 1.07694 5.68807C1.0766 5.7038 1.0766 5.71953 1.0766 5.73554C1.0766 7.56465 2.29516 9.09914 3.91235 9.45659C3.61572 9.54065 3.30341 9.58463 2.98103 9.5825C2.75324 9.58099 2.53173 9.55573 2.31592 9.51037C2.76573 11.0104 4.07122 12.105 5.6182 12.1412C4.40834 13.1455 2.8841 13.7437 1.2278 13.7402C0.942454 13.7397 0.661075 13.7212 0.384521 13.6857C1.94899 14.7592 3.80716 15.3842 5.80351 15.3847C12.3058 15.3864 15.8616 9.72783 15.8616 4.8197C15.8616 4.65867 15.8581 4.4985 15.8514 4.33911C16.5421 3.82445 17.1414 3.17918 17.6153 2.44234C16.9814 2.7281 16.3 2.91789 15.585 2.9975C16.3148 2.54834 16.8754 1.82948 17.1393 0.967432C16.4562 1.38169 15.6997 1.67877 14.8944 1.833Z"
+                                        fill="#FEFEFE" />
+                                </svg>
+                            </div>
+                            <div class="footer1__content__adresses-grid__follow-us__icon-box__icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.67096 15.3724V5.61307H0.654582V15.3724H3.67096ZM3.67096 2.15381C3.65299 1.28045 3.07093 0.615479 2.12535 0.615479C1.17952 0.615479 0.561523 1.28045 0.561523 2.15381C0.561523 3.0082 1.16156 3.6924 2.08917 3.6924H2.10714C3.07093 3.6924 3.67096 3.0082 3.67096 2.15381ZM8.59201 15.3724V9.81202C8.59201 9.51444 8.61352 9.21686 8.70103 9.00472C8.94027 8.40984 9.48476 7.79405 10.399 7.79405C11.5967 7.79405 12.3479 8.47378 12.3479 9.81202V15.3724H15.3846V9.66323C15.3846 6.60489 13.752 5.18178 11.5743 5.18178C9.78883 5.18178 9.00509 6.18002 8.56991 6.85945L8.59171 5.55418H5.56023C5.60384 6.48848 5.56023 15.3724 5.56023 15.3724H8.59201Z"
+                                        fill="#FEFEFE" />
+                                </svg>
+                            </div>
+                            <div class="footer1__content__adresses-grid__follow-us__icon-box__icon">
+                                <svg width="22" height="15" viewBox="0 0 22 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.0221 3.13946C21.0221 3.13946 20.8221 1.73005 20.2088 1.10921C19.4314 0.294743 18.5594 0.29088 18.1597 0.243158C15.2977 0.0361328 11.0045 0.0361328 11.0045 0.0361328H10.9954C10.9954 0.0361328 6.70241 0.0361328 3.84019 0.243158C3.44046 0.29088 2.56896 0.294743 1.79108 1.10921C1.17773 1.73005 0.978207 3.13946 0.978207 3.13946C0.978207 3.13946 0.773682 4.79452 0.773682 6.44958V8.00148C0.773682 9.65631 0.978207 11.3114 0.978207 11.3114C0.978207 11.3114 1.17773 12.7208 1.79108 13.3416C2.56896 14.1563 3.5909 14.1302 4.04608 14.2156C5.68251 14.3727 10.9999 14.4213 10.9999 14.4213C10.9999 14.4213 15.2977 14.4147 18.1597 14.2079C18.5594 14.1602 19.4314 14.1563 20.2088 13.3416C20.8221 12.7208 21.0221 11.3114 21.0221 11.3114C21.0221 11.3114 21.2262 9.65631 21.2262 8.00148V6.44958C21.2262 4.79452 21.0221 3.13946 21.0221 3.13946ZM8.88855 9.88151L8.88764 4.13504L14.4139 7.01816L8.88855 9.88151Z"
+                                        fill="#FEFEFE" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </footer>
+
+        <footer class="footer2">
+            <div class="footer2__copyright">
+                2020 © PanDoo
+            </div>
+            <div class="footer2__grid">
+                <a href="someadres.com" class="footer2__grid__link">
+                    GDPR
+                </a>
+                <a href="someadres.com" class="footer2__grid__link">
+                    Privacy
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
-</html>
 
+</html>
