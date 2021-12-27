@@ -51,7 +51,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #333333;
@@ -101,7 +101,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.167;
   color: #FEFEFE;
   padding: 32px 24px 24px 24px;
 }
@@ -112,7 +112,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #FEFEFE;
@@ -124,7 +124,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.167;
   margin: 120px auto 86px auto;
   text-align: center;
 }
@@ -190,7 +190,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
   color: #E5E5E5;
 }
 
@@ -205,7 +205,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #E5E5E5;
@@ -221,7 +221,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.167;
   color: #E5E5E5;
   text-align: center;
   margin: auto auto 117px auto;
@@ -250,7 +250,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.167;
   color: #E5E5E5;
   margin: 0 0 12 0;
 }
@@ -261,7 +261,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #E5E5E5;
@@ -305,7 +305,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.167;
   color: #E5E5E5;
   margin: 0 0 12 0;
 }
@@ -316,7 +316,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #E5E5E5;
@@ -354,7 +354,7 @@ section, header, footer {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
@@ -384,7 +384,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.167;
 }
 
 .section4 .section4__text-box .section4__text-box__p {
@@ -392,7 +392,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
   width: 840px;
   text-align: center;
 }
@@ -437,7 +437,7 @@ section, header, footer {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
   text-align: center;
   text-transform: uppercase;
 }
@@ -447,7 +447,7 @@ section, header, footer {
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   color: rgba(51, 51, 51, 0.7);
 }
@@ -457,7 +457,7 @@ section, header, footer {
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   color: rgba(51, 51, 51, 0.7);
 }
@@ -467,7 +467,7 @@ section, header, footer {
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   color: rgba(51, 51, 51, 0.7);
 }
@@ -477,7 +477,7 @@ section, header, footer {
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   color: rgba(51, 51, 51, 0.7);
 }
@@ -527,7 +527,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   display: -webkit-box;
@@ -544,7 +544,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
 }
 
 .footer1 .footer1__content .footer1__content__adresses-grid .footer1__content__adresses-grid__follow-us .footer1__content__adresses-grid__follow-us__em {
@@ -552,7 +552,7 @@ section, header, footer {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.167;
 }
 
 .footer1 .footer1__content .footer1__content__adresses-grid .footer1__content__adresses-grid__follow-us .footer1__content__adresses-grid__follow-us__icon-box {
@@ -600,7 +600,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #E5E5E5;
@@ -625,7 +625,7 @@ section, header, footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.167;
   letter-spacing: 0em;
   text-align: left;
   color: #E5E5E5;

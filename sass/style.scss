@@ -11,14 +11,14 @@ $header-height: 101px;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 56px;
+    line-height: 1.167;
 }
 @mixin subsec-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.167;
 }
 @mixin normal-text-font {
     text-decoration: none;
@@ -26,7 +26,7 @@ $header-height: 101px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 1.167;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -35,7 +35,7 @@ $header-height: 101px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.167;
 }
 @mixin emph-text-font {
     text-decoration: none;
@@ -43,7 +43,7 @@ $header-height: 101px;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 1.167;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -52,7 +52,7 @@ $header-height: 101px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.167;
 }
 
 body, html {
@@ -321,7 +321,7 @@ section, header, footer{
             font-style: normal;
             font-weight: bold;
             font-size: 18px;
-            line-height: 21px;
+            line-height: 1.167;
             text-align: center;
             text-transform: uppercase;
             color: #333333;
@@ -382,7 +382,7 @@ section, header, footer{
                 font-style: normal;
                 font-weight: bold;
                 font-size: 24px;
-                line-height: 28px;
+                line-height: 1.167;
                 text-align: center;
                 text-transform: uppercase;
             }
@@ -392,7 +392,7 @@ section, header, footer{
                 font-style: italic;
                 font-weight: normal;
                 font-size: 18px;
-                line-height: 21px;
+                line-height: 1.167;
                 text-align: center;
                 color: rgba(51, 51, 51, 0.7);
                 
