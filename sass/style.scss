@@ -4,26 +4,26 @@ $our-green: #87DE87;
 $our-gray: #333333;
 $our-white: #E5E5E5;
 
-$header-height: 101px;
+$header-height: 6.3125rem;
 
 @mixin section-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1.167;
 }
 @mixin subsec-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 1.167;
 }
 @mixin normal-text-font {
     text-decoration: none;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.167;
@@ -34,13 +34,13 @@ $header-height: 101px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.167;
 }
 @mixin emph-text-font {
     text-decoration: none;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 1.167;
@@ -51,24 +51,24 @@ $header-height: 101px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.167;
 }
 
 body, html {
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 section, header, footer{
     width: 100%;
-    margin: 0px;
+    margin: 0rem;
 
 }
 
 .card1 {
-    width: 627px;
-    height: 228px;
+    width: 39.1875rem;
+    height: 14.25rem;
 }
 
 .site-content{
@@ -85,17 +85,17 @@ section, header, footer{
         display: inline-block;
         background-color: $our-white;
         position: relative;
-        margin: 24px 0px 25px 108px;
+        margin: 1.5rem 0rem 1.5625rem 6.75rem;
     }
 
     .header__grid{
         display: grid;
         align-items: center;
-        margin: 30px 84px 31px auto;
+        margin: 1.875rem 5.25rem 1.9375rem auto;
         float: right;
 
         grid-template-columns: auto auto auto auto auto auto;
-        column-gap: 24px;
+        column-gap: 1.5rem;
 
         & > .header__grid__link{
             @include emph-text-font();
@@ -103,9 +103,9 @@ section, header, footer{
         }
 
         .header__grid__button{
-            width: 128px;
-            height: 40px;
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+            width: 8rem;
+            height: 2.5rem;
+            box-shadow: 0rem 0rem .375rem rgba(0, 0, 0, 0.25);
             background-color: #FFFFFF;
 
         }
@@ -119,43 +119,44 @@ section, header, footer{
     background-image: 
         url("../images/background1.png");
     background-repeat: no-repeat;
-    height: 640px;
+    height: 40rem;
+    width: 100%;
 
     .card1{
         position: relative;
-        left: 196px;
-        top: 206px;
+        left: 12.25rem;
+        top: 12.875rem;
         display: table;
 
         .card1__rectangle{
             display: table-cell;
             background-color: $our-green;
             height: 100%;
-            width: 32px;
+            width: 2rem;
         }
 
         .card1__article{
             display: table-cell;
             background-color: $our-gray;
             height: 100%;
-            width: 595px;
+            width: 37.1875rem;
 
             & > *{
-                margin: 0px 0px 0px 0px;
+                margin: 0rem 0rem 0rem 0rem;
             }
 
             .card1__article__h1{
                 @include section-title-font();
                 color: #FEFEFE;
 
-                padding: 32px 24px 24px 24px;
+                padding: 2rem 1.5rem 1.5rem 1.5rem;
             }
 
             .card1__article__p{
                 @include normal-text-font();
                 color: #FEFEFE;
 
-                padding: 24px 19px 32px 24px;
+                padding: 1.5rem 1.1875rem 2rem 1.5rem;
             }
             
 
@@ -167,19 +168,19 @@ section, header, footer{
     
     .section2__h1{
         @include section-title-font();
-        margin: 120px auto 86px auto;
+        margin: 7.5rem auto 5.375rem auto;
         text-align: center;
     }
     .card2-container{
         display: flex;
-        margin: 86px 96px 120px 96px;
+        margin: 5.375rem 6rem 7.5rem 6rem;
         justify-content: space-between;
         
         .card2 {
-            flex: 0 1 552px;
+            flex: 0 1 34.5rem;
             background-color: $our-gray;
-            margin: auto 12px auto 12px;
-            padding: 32px 34px 32px 32px; 
+            margin: auto .75rem auto .75rem;
+            padding: 2rem 2.125rem 2rem 2rem; 
             .card2__sec1{
                 display: flex;
                 
@@ -187,11 +188,11 @@ section, header, footer{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 120px;
-                    width: 120px;
+                    height: 7.5rem;
+                    width: 7.5rem;
                     background-image: url("../images/Ellipse\ 1.png");
                     background-repeat: no-repeat;
-                    margin-right: 24px;
+                    margin-right: 1.5rem;
                 }
 
                 .card2__sec1__titles{
@@ -200,7 +201,7 @@ section, header, footer{
                     justify-content: center;
                     
                     & > * {
-                        margin: 5px 5px 5px 5px;
+                        margin: .3125rem .3125rem .3125rem .3125rem;
                         @include card-title-font();
                         color: $our-white;
                     }
@@ -225,25 +226,25 @@ section, header, footer{
 
 .section3 {
     background-color: $our-gray;
-    padding-top: 64px;
+    padding-top: 4rem;
 
     .section3__h1{
         @include section-title-font();
         color: $our-white;
         text-align: center;
-        margin: auto auto 117px auto;
+        margin: auto auto 7.3125rem auto;
     }
 
     .section3__subsection1{
         display: flex;
         flex-wrap: nowrap;
-        margin: auto 108px 128px 252px;
+        margin: auto 6.75rem 8rem 15.75rem;
         justify-content: space-between;
-        height: 480px;
+        height: 30rem;
 
         .section3__subsection1__article{
-            margin-right: 168px;
-            height: 435px;
+            margin-right: 10.5rem;
+            height: 27.1875rem;
 
             .section3__subsection1__article__h1{
                 @include subsec_title_font();
@@ -261,7 +262,7 @@ section, header, footer{
         .card3 {
             display: flex;
             .card3__rectangle{
-                width: 32px;
+                width: 2rem;
                 height: 100%;
                 background-color: $our_green;
             }
@@ -272,14 +273,14 @@ section, header, footer{
     .section3__subsection2{
         display: flex;
         flex-wrap: nowrap;
-        margin: auto 252px 128px 108px;
+        margin: auto 15.75rem 8rem 6.75rem;
         justify-content: space-between;
-        height: 480px;
+        height: 30rem;
 
         .section3__subsection2__article{
             order: 2;
-            margin-left: 168px;
-            height: 435px;
+            margin-left: 10.5rem;
+            height: 27.1875rem;
 
             .section3__subsection2__article__h1{
                 @include subsec_title_font();
@@ -298,7 +299,7 @@ section, header, footer{
             order: 1;
             display: flex;
             .card3__rectangle{
-                width: 32px;
+                width: 2rem;
                 height: 100%;
                 background-color: $our_green;
             }
@@ -312,15 +313,15 @@ section, header, footer{
         
         .section3__button{
             background: #87DE87;
-            border-radius: 12px;
-            height: 72px;
-            width: 264px;
-            margin: auto auto 96px auto;
+            border-radius: .75rem;
+            height: 4.5rem;
+            width: 16.5rem;
+            margin: auto auto 6rem auto;
             //font
             font-family: Raleway;
             font-style: normal;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 1.167;
             text-align: center;
             text-transform: uppercase;
@@ -331,11 +332,11 @@ section, header, footer{
 }
 
 .section4{
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
 
     .section4__text-box{
         position: relative;
-        margin: 120px auto 70px auto;
+        margin: 7.5rem auto 4.375rem auto;
 
         display: flex;
         flex-direction: column;
@@ -346,7 +347,7 @@ section, header, footer{
         }
         .section4__text-box__p{
             @include strong-text-font();
-            width: 840px;
+            width: 52.5rem;
             text-align: center;
         }
     }
@@ -355,33 +356,33 @@ section, header, footer{
         justify-content: center;
 
         .section4__sch-box__search-bar{
-            width: 696px;
-            height: 64px;
+            width: 43.5rem;
+            height: 4rem;
             display: flex;
             background: #FEFEFE;
-            border: 1px solid #FEFEFE;
+            border: .0625rem solid #FEFEFE;
             box-sizing: border-box;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-            border-radius: 12px;
-            padding-left: 20px;
+            box-shadow: 0rem 0rem .5rem rgba(0, 0, 0, 0.25);
+            border-radius: .75rem;
+            padding-left: 1.25rem;
             
             input{
-                border-width: 0px;
+                border-width: 0rem;
             }
 
             .section4__sch-box__search-bar__button{
-                width: 120px;
-                height: 48px;
+                width: 7.5rem;
+                height: 3rem;
                 background: #87DE87;
-                border-radius: 12px;
-                margin: 8px 8px 8px auto;
-                border-width: 0px;
+                border-radius: .75rem;
+                margin: .5rem .5rem .5rem auto;
+                border-width: 0rem;
 
                 //font
                 font-family: Raleway;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 1.5rem;
                 line-height: 1.167;
                 text-align: center;
                 text-transform: uppercase;
@@ -391,7 +392,7 @@ section, header, footer{
                 font-family: Raleway;
                 font-style: italic;
                 font-weight: normal;
-                font-size: 18px;
+                font-size: 1.125rem;
                 line-height: 1.167;
                 text-align: center;
                 color: rgba(51, 51, 51, 0.7);
@@ -403,29 +404,29 @@ section, header, footer{
 
 .footer1{
     background-color: $our_green;
-    height: 424px;
-    padding-top: 48px;
+    height: 26.5rem;
+    padding-top: 3rem;
 
     .footer1__content{
         display: flex;
         flex-direction: column;
-        margin: auto auto auto 108px;
+        margin: auto auto auto 6.75rem;
 
         .footer1__content__company-name{
             background-color: white;
-            width: 223px;
-            height: 78px;
-            margin-bottom: 42px;
+            width: 13.9375rem;
+            height: 4.875rem;
+            margin-bottom: 2.625rem;
 
             svg{
-                margin-top: 48px;
+                margin-top: 3rem;
             }
         }
 
         .footer1__content__adresses-grid{
             display: flex;
             justify-content: flex-start;
-            column-gap: 200px;
+            column-gap: 12.5rem;
 
             .footer1__content__adresses-grid__addy{
                 @include normal-text-font();
@@ -447,14 +448,14 @@ section, header, footer{
                 .footer1__content__adresses-grid__follow-us__icon-box{
                     display: flex;
                     justify-content: flex-start;
-                    column-gap: 24px;
-                    margin-top: 18px;
+                    column-gap: 1.5rem;
+                    margin-top: 1.125rem;
 
                     .footer1__content__adresses-grid__follow-us__icon-box__icon{
                         border-radius: 50%;
                         background-color: $our-gray;
-                        width: 48px;
-                        height: 48px;
+                        width: 3rem;
+                        height: 3rem;
 
                         svg{
                             display: block;
@@ -470,7 +471,7 @@ section, header, footer{
 
 .footer2{
     background-color: $our-gray;
-    height: 48px;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -478,16 +479,16 @@ section, header, footer{
     .footer2__copyright{
         @include normal-text-font();
         color: $our-white;
-        margin-left: 108px;
+        margin-left: 6.75rem;
 
         
     }
 
     .footer2__grid{
         display: flex;
-        margin-right: 108px;
+        margin-right: 6.75rem;
         justify-content: flex-end;
-        column-gap: 36px;
+        column-gap: 2.25rem;
 
         .footer2__grid__link{
             @include normal-text-font();
