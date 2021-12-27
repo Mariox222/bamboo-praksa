@@ -1,26 +1,26 @@
 
 // colors
-$our_green: #87DE87;
-$our_gray: #333333;
-$our_white: #E5E5E5;
+$our-green: #87DE87;
+$our-gray: #333333;
+$our-white: #E5E5E5;
 
-$header_height: 101px;
+$header-height: 101px;
 
-@mixin section_title_font {
+@mixin section-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
 }
-@mixin subsec_title_font {
+@mixin subsec-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 42px;
 }
-@mixin normal_text_font {
+@mixin normal-text-font {
     text-decoration: none;
     font-family: Raleway;
     font-size: 18px;
@@ -30,14 +30,14 @@ $header_height: 101px;
     letter-spacing: 0em;
     text-align: left;
 }
-@mixin strong_text_font {
+@mixin strong-text-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
 }
-@mixin emph_text_font {
+@mixin emph-text-font {
     text-decoration: none;
     font-family: Raleway;
     font-size: 18px;
@@ -47,7 +47,7 @@ $header_height: 101px;
     letter-spacing: 0em;
     text-align: left;
 }
-@mixin card_title_font {
+@mixin card-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -72,18 +72,18 @@ section, header, footer{
 }
 
 .site-content{
-    padding-top: $header_height;
+    padding-top: $header-height;
 }
 
 .header {
     position: fixed;
-    background-color: $our_green;
-    height: $header_height;
+    background-color: $our-green;
+    height: $header-height;
     z-index: 1;
     
     .header__title-container{
         display: inline-block;
-        background-color: $our_white;
+        background-color: $our-white;
         position: relative;
         margin: 24px 0px 25px 108px;
     }
@@ -98,8 +98,8 @@ section, header, footer{
         column-gap: 24px;
 
         & > .header__grid__link{
-            @include emph_text_font();
-            color: $our_gray;
+            @include emph-text-font();
+            color: $our-gray;
         }
 
         .header__grid__button{
@@ -129,14 +129,14 @@ section, header, footer{
 
         .card1__rectangle{
             display: table-cell;
-            background-color: $our_green;
+            background-color: $our-green;
             height: 100%;
             width: 32px;
         }
 
         .card1__article{
             display: table-cell;
-            background-color: $our_gray;
+            background-color: $our-gray;
             height: 100%;
             width: 595px;
 
@@ -145,14 +145,14 @@ section, header, footer{
             }
 
             .card1__article__h1{
-                @include section_title_font();
+                @include section-title-font();
                 color: #FEFEFE;
 
                 padding: 32px 24px 24px 24px;
             }
 
             .card1__article__p{
-                @include normal_text_font();
+                @include normal-text-font();
                 color: #FEFEFE;
 
                 padding: 24px 19px 32px 24px;
@@ -166,7 +166,7 @@ section, header, footer{
 .section2 {
     
     .section2__h1{
-        @include section_title_font();
+        @include section-title-font();
         margin: 120px auto 86px auto;
         text-align: center;
     }
@@ -177,7 +177,7 @@ section, header, footer{
         
         .card2 {
             flex: 0 1 552px;
-            background-color: $our_gray;
+            background-color: $our-gray;
             margin: auto 12px auto 12px;
             padding: 32px 34px 32px 32px; 
             .card2__sec1{
@@ -201,8 +201,8 @@ section, header, footer{
                     
                     & > * {
                         margin: 5px 5px 5px 5px;
-                        @include card_title_font();
-                        color: $our_white;
+                        @include card-title-font();
+                        color: $our-white;
                     }
 
                     .card2__sec1__titles__h2{
@@ -214,8 +214,8 @@ section, header, footer{
 
             .card2__sec2{
                 .card2__sec2__p{
-                    @include normal_text_font();
-                    color: $our_white;
+                    @include normal-text-font();
+                    color: $our-white;
                 }
             }
 
@@ -224,12 +224,12 @@ section, header, footer{
 }
 
 .section3 {
-    background-color: $our_gray;
+    background-color: $our-gray;
     padding-top: 64px;
 
     .section3__h1{
-        @include section_title_font();
-        color: $our_white;
+        @include section-title-font();
+        color: $our-white;
         text-align: center;
         margin: auto auto 117px auto;
     }
@@ -247,14 +247,14 @@ section, header, footer{
 
             .section3__subsection1__article__h1{
                 @include subsec_title_font();
-                color: $our_white;
+                color: $our-white;
                 margin: 0 0 12 0;
                 
             }
 
             .section3__subsection1__article__p{
-                @include normal_text_font();
-                color: $our_white;
+                @include normal-text-font();
+                color: $our-white;
             }
         }
 
@@ -283,14 +283,14 @@ section, header, footer{
 
             .section3__subsection2__article__h1{
                 @include subsec_title_font();
-                color: $our_white;
+                color: $our-white;
                 margin: 0 0 12 0;
                 
             }
 
             .section3__subsection2__article__p{
-                @include normal_text_font();
-                color: $our_white;
+                @include normal-text-font();
+                color: $our-white;
             }
         }
 
@@ -342,10 +342,10 @@ section, header, footer{
         align-items: center;
 
         .section4__text-box__h1{
-            @include section_title_font();   
+            @include section-title-font();   
         }
         .section4__text-box__p{
-            @include strong_text_font();
+            @include strong-text-font();
             width: 840px;
             text-align: center;
         }
@@ -428,20 +428,20 @@ section, header, footer{
             column-gap: 200px;
 
             .footer1__content__adresses-grid__addy{
-                @include normal_text_font();
+                @include normal-text-font();
                 display: flex;
                 flex-direction: column;
 
 
                 .footer1__content__adresses-grid__addy__em{
-                    @include card_title_font();
+                    @include card-title-font();
                 }
             }
 
             .footer1__content__adresses-grid__follow-us{
 
                 .footer1__content__adresses-grid__follow-us__em{
-                    @include card_title_font();
+                    @include card-title-font();
                 }
 
                 .footer1__content__adresses-grid__follow-us__icon-box{
@@ -452,7 +452,7 @@ section, header, footer{
 
                     .footer1__content__adresses-grid__follow-us__icon-box__icon{
                         border-radius: 50%;
-                        background-color: $our_gray;
+                        background-color: $our-gray;
                         width: 48px;
                         height: 48px;
 
@@ -469,15 +469,15 @@ section, header, footer{
 }
 
 .footer2{
-    background-color: $our_gray;
+    background-color: $our-gray;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .footer2__copyright{
-        @include normal_text_font();
-        color: $our_white;
+        @include normal-text-font();
+        color: $our-white;
         margin-left: 108px;
 
         
@@ -490,8 +490,8 @@ section, header, footer{
         column-gap: 36px;
 
         .footer2__grid__link{
-            @include normal_text_font();
-            color: $our_white;
+            @include normal-text-font();
+            color: $our-white;
         }
     }
 }
