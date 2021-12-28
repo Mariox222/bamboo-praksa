@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 // colors
 $our-green: #87DE87;
@@ -75,6 +76,11 @@ section, header, footer{
     padding-top: $header-height;
 }
 
+button {
+    border: 0;
+    padding: 0;
+}
+
 .header {
     position: fixed;
     background-color: $our-green;
@@ -102,11 +108,21 @@ section, header, footer{
             color: $our-gray;
         }
 
-        .header__grid__button{
+        button.header__grid__button{
             width: 8rem;
             height: 2.5rem;
             box-shadow: 0rem 0rem .375rem rgba(0, 0, 0, 0.25);
             background-color: #FFFFFF;
+
+            // font
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 1.167;
+                    
+            color: #333333;
+
 
         }
     }
