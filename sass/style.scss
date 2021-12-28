@@ -1,4 +1,11 @@
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Required Core Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+//@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 // colors
 $our-green: #87DE87;
@@ -344,6 +351,23 @@ button {
             color: #333333;
             //font
         }
+    }
+}
+
+.glider-section{
+    .glider-section__wrapper{
+        margin-top: 5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .glider-section__title{
+            @include section-title-font();
+            margin-bottom: 5rem;
+        }
+
+        
     }
 }
 

@@ -330,6 +330,31 @@
 
         </section>
 
+        <section class="glider-section">
+            <div class="glider-section__wrapper">
+                <h1 class="glider-section__title">
+                    Section title
+                </h1>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="/images/slide1.png" alt="couldn't load image"></li>
+                            <li class="glide__slide"><img src="/images/slide1.png" alt="couldn't load image"></li>
+                            <li class="glide__slide"><img src="/images/slide1.png" alt="couldn't load image"></li>
+                            <li class="glide__slide"><img src="/images/slide1.png" alt="couldn't load image"></li>
+                            <li class="glide__slide"><img src="/images/slide1.png" alt="couldn't load image"></li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrows__left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrows__right" data-glide-dir=">">next</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
         <section class="section4">
             <div class="section4__text-box">
                 <h1 class="section4__text-box__h1">Section title</h1>
@@ -449,6 +474,25 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3,
+            gap: 24,
+            peek: {
+                before: 85,
+                after: 85
+            }
+        }
+        new Glide('.glide', config).mount()
+
+    </script>
+
 </body>
+
+
 
 </html>
