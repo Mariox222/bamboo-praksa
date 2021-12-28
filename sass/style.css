@@ -483,6 +483,45 @@ button {
   margin-bottom: 5rem;
 }
 
+.glider-section .glider-section__wrapper .glide {
+  position: relative;
+}
+
+.glider-section .glider-section__wrapper .glide .glide__arrows {
+  position: absolute;
+  bottom: 9rem;
+  vertical-align: middle;
+  z-index: 2;
+  width: 100%;
+  padding-left: 8.125rem;
+  padding-right: 8.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--left, .glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--right {
+  border-radius: 50%;
+  background-color: #87DE87;
+  width: 3rem;
+  height: 3rem;
+}
+
+.glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--left svg, .glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--right svg {
+  display: block;
+  margin: auto auto auto auto;
+  height: 75%;
+  width: 75%;
+}
+
+.glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--left:hover, .glider-section .glider-section__wrapper .glide .glide__arrows .glide__arrow--right:hover {
+  -webkit-box-shadow: 0rem 0rem 1rem black;
+          box-shadow: 0rem 0rem 1rem black;
+}
+
 .section4 {
   margin-bottom: 7.5rem;
 }
