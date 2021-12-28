@@ -384,6 +384,10 @@ button {
             
             input{
                 border-width: 0rem;
+                flex-grow: 1;
+                margin-right: .625rem;
+                padding-left: .625rem;
+                @include normal-text-font();
             }
 
             .section4__sch-box__search-bar__button{
@@ -410,7 +414,7 @@ button {
                 font-weight: normal;
                 font-size: 1.125rem;
                 line-height: 1.167;
-                text-align: center;
+                text-align: left;
                 color: rgba(51, 51, 51, 0.7);
                 
             }

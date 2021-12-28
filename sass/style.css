@@ -437,6 +437,19 @@ button {
 
 .section4 .section4__sch-box .section4__sch-box__search-bar input {
   border-width: 0rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: .625rem;
+  padding-left: .625rem;
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .section4 .section4__sch-box .section4__sch-box__search-bar .section4__sch-box__search-bar__button {
@@ -461,7 +474,7 @@ button {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.167;
-  text-align: center;
+  text-align: left;
   color: rgba(51, 51, 51, 0.7);
 }
 
@@ -471,7 +484,7 @@ button {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.167;
-  text-align: center;
+  text-align: left;
   color: rgba(51, 51, 51, 0.7);
 }
 
@@ -481,7 +494,7 @@ button {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.167;
-  text-align: center;
+  text-align: left;
   color: rgba(51, 51, 51, 0.7);
 }
 
@@ -491,7 +504,7 @@ button {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.167;
-  text-align: center;
+  text-align: left;
   color: rgba(51, 51, 51, 0.7);
 }
 
