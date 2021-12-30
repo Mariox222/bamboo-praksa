@@ -1,0 +1,81 @@
+@use '../variables';
+
+
+@mixin padding-and-margin-reset {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin section-title-font {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+}
+
+@media only screen and (max-width: 23.4375rem){
+    
+    h1, body, html {
+        @include padding-and-margin-reset();
+    }
+    
+    section, header, footer{
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .site-content{
+        padding-top: variables.$phone-header-height;
+    }
+    
+    button {
+        border: 0;
+        padding: 0;
+    }
+
+    .header {
+        position: fixed;
+        background-color: variables.$our-green;
+        height: variables.$phone-header-height;
+        z-index: 10;
+
+        .header__title-container{
+            display: inline-block;
+            background-color: variables.$our-white;
+            position: relative;
+            margin: 0rem auto auto 2rem;
+        }
+
+        .header__grid{
+            display: none;
+        }
+    }
+
+    .section1-image{
+        @include padding-and-margin-reset();
+        background-image: url("../../images/background1-phone.png");
+        background-repeat: no-repeat;
+        height: 28.9375rem;
+        width: 100%;
+
+    }
+
+    .section1{
+        @include padding-and-margin-reset();
+        height: 14.75rem;
+        background-color: variables.$our-gray;
+        padding-top: 2rem;
+
+        .card1{
+            .card1__article{
+                .card1__article__h1{
+                    @include section-title-font();
+                    color: variables.$our-white;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,1 +1,11 @@
-@import './screens/desktop'; 
+
+
+// Required Core Stylesheet
+@use "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@use './screens/phone';
+@use './screens/desktop';
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
