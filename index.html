@@ -70,7 +70,7 @@
                 </article>
             </div>
         </section>
-
+        <div class="intersection"></div>
         <section class="section2">
             <h1 class="section2__h1">
                 Section title
@@ -486,12 +486,23 @@
 
     <script>
         const config = {
+            
             type: 'carousel',
             perView: 3,
             gap: 24,
             peek: {
                 before: 85,
                 after: 85
+            },
+            breakpoints:{
+                376: {
+                    perView: 1,
+                    gap: 16,
+                    peek: {
+                        before: 29,
+                        after: 29
+                    }
+                }
             }
         }
         new Glide('.glide', config).mount()
