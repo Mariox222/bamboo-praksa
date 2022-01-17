@@ -30,6 +30,19 @@
     line-height: 1.167;
 }
 
+@keyframes navbar-fade {
+    from{
+        transform: translateX(23.4375rem);
+        opacity: 0;
+        
+    }
+    to {
+        transform: translateX(0rem);
+        opacity: 1;
+        
+    }
+}
+
 @media only screen and (max-width: 23.4375rem){
     
     h1, body, html {
@@ -56,6 +69,9 @@
         height: variables.$phone-header-height;
         z-index: 10;
 
+        display: flex;
+        flex-direction: row;
+
         .header__title-container{
             display: inline-block;
             background-color: variables.$our-white;
@@ -63,8 +79,126 @@
             margin: 0rem auto auto 2rem;
         }
 
-        .header__grid{
-            display: none;
+        .hamburg-navbar-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .hamburger{
+                margin: 1rem 1rem 1rem auto;
+                margin-right: 1rem;
+                padding: 0;
+                float: right;
+                background-color: white;
+                width: 2rem;
+                height: 2rem;
+                transition: opacity .3s;
+
+                .hamburger__line {
+                    width: 1.125rem;
+                    height: .125rem;
+                    background-color: black;
+                    margin: .3125rem auto;
+                    transition: all 0.3s ease-in-out;
+                }
+                .hamburger__line:nth-child(1){
+                    margin-top: 0.5rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: .5;
+                }
+
+                &.isactive{
+                    .hamburger__line:nth-child(2){
+                        opacity: 0;
+                    }
+
+                    .hamburger__line:nth-child(1){
+                        transform: translateY(.435rem) rotate(45deg);
+                    }
+
+                    .hamburger__line:nth-child(3){
+                        transform: translateY(-.435rem) rotate(-45deg);
+                    }
+                    
+                }
+            }
+
+            .navbar{
+                margin: -1rem 0 0 0;
+                padding: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: white;
+                transition: all 2s ease-in-out;
+                display: none;
+
+                &.active{
+                    // prikazi se kad ima .active class
+                    display: block;
+                    animation: navbar-fade .4s;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+
+                    // override default values
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                    //
+
+                    li {
+                        margin-top: 2rem;
+
+                        //font
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 1.167;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: .5;
+                        }
+                    }
+                    li:nth-child(1){
+                        margin-top: 5.5rem;
+                    }
+                }
+
+                .navbar__button{
+                    position: absolute;
+                    bottom: 3rem;
+                    
+                    width: 10rem;
+                    height: 3.5rem;
+                    background: #87DE87;
+                    margin-left: 2rem;
+                    border-width: 0rem;
+    
+                    //font
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                    line-height: 1.167;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .5;
+                    }
+                }
+            }
         }
     }
 

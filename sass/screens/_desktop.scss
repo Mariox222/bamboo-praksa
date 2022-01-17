@@ -55,6 +55,14 @@
         padding: 0rem;
         margin: 0rem;
     }
+
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
     
     section, header, footer{
         width: 100%;
@@ -81,6 +89,9 @@
         background-color: variables.$our-green;
         height: variables.$desktop-header-height;
         z-index: 10;
+
+        display: flex;
+        justify-content: space-between;
         
         .header__title-container{
             display: inline-block;
@@ -89,39 +100,52 @@
             margin: 1.5rem 0rem 1.5625rem 6.75rem;
         }
     
-        .header__grid{
-            display: grid;
-            align-items: center;
-            margin: 1.875rem 5.25rem 1.9375rem auto;
-            float: right;
-    
-            grid-template-columns: auto auto auto auto auto auto;
-            column-gap: 1.5rem;
-    
-            & > .header__grid__link{
-                @include emph-text-font();
-                color: variables.$our-gray;
+        .hamburg-navbar-container{
+            margin: 1.5rem 6rem 1.875rem auto;
+            .hamburger{
+                display: none;
             }
+
+            .navbar{
+                margin: 0;
+                display: flex;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 2rem;
+
+                    @include emph-text-font();
+                    color: black;
+
+                    li {
+                        margin: auto 1rem auto 1rem;
+                    }
+                }
+
+                .navbar__button{
+                    width: 8rem;
+                    height: 2.5rem;
+                    background: white;
+                    border-width: 0rem;
+                    margin: auto 1rem auto 1rem;
     
-            button.header__grid__button{
-                width: 8rem;
-                height: 2.5rem;
-                box-shadow: 0rem 0rem .375rem rgba(0, 0, 0, 0.25);
-                background-color: #FFFFFF;
-    
-                // font
-                font-family: Raleway;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.125rem;
-                line-height: 1.167;
-                        
-                color: #333333;
-    
-    
+                    //font
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                    line-height: 1.167;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .8;
+                    }
+                }
             }
         }
-    
     
     }
     

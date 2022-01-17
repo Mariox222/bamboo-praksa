@@ -43,16 +43,24 @@
                 </defs>
             </svg>
         </div>
-        <div class="header__grid">
-            <a class="header__grid__link" href="http://fillme.com">About</a>
-            <a class="header__grid__link" href="http://fillme.com">Pricing</a>
-            <a class="header__grid__link" href="http://fillme.com">Testimonials</a>
-            <a class="header__grid__link" href="http://fillme.com">Blog</a>
-            <a class="header__grid__link" href="http://fillme.com">Contact</a>
-            <button class="header__grid__button">
-                GET IT NOW
-            </button>
+        <div class="hamburg-navbar-container">
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+            <menu class="navbar">
+                <ul>
+                    <li class="navbar__item"><a href="#">About</a></li>
+                    <li class="navbar__item"><a href="#">Pricing</a></li>
+                    <li class="navbar__item"><a href="#">Testimonials</a></li>
+                    <li class="navbar__item"><a href="#">Blog</a></li>
+                    <li class="navbar__item"><a href="#">Contact</a></li>
+                </ul>
+                <button class="navbar__button">GET IT NOW</button>
+            </menu>
         </div>
+        
 
     </header>
     <div class="site-content">
@@ -485,6 +493,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script>
+        // glide.js script
         const config = {
             
             type: 'carousel',
@@ -506,6 +515,19 @@
             }
         }
         new Glide('.glide', config).mount()
+    </script>
+
+    <script>
+        // hamburger script
+        let hamburger = document.querySelector('.hamburger')
+        let menu = document.querySelector('.navbar')
+        let bod = document.querySelector('hamburg-navbar-container')
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('isactive')
+            menu.classList.toggle('active')
+            console.log("mmm hamburger")
+        })
 
     </script>
 
