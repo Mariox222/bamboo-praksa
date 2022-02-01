@@ -2,6 +2,6 @@
 
 # Build
 run this in the root directory
-> npm test
+`npm test`
 
 then open *index.html*
