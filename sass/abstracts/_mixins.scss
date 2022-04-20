@@ -52,3 +52,85 @@
   }
 }
 
+
+// fonts begin
+// =======================================================
+@mixin section-title-font {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.167;
+
+  @include respond-to('small'){
+    font-size: 2.25rem;
+  }
+}
+@mixin subsec-title-font {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.167;
+}
+@mixin normal-text-font {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @include respond-to('small'){
+    font-size: 1rem;
+    line-height: 1.1875;
+    font-weight: normal;
+  }
+}
+@mixin strong-text-font {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.167;
+}
+@mixin emph-text-font {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.167;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@mixin card-title-font {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.167;
+}
+
+// ==============================================================
+// fonts end
+
+@mixin padding-and-margin-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes navbar-fade {
+  from{
+      transform: translateX(23.4375rem);
+      opacity: 0;
+      
+  }
+  to {
+      transform: translateX(0rem);
+      opacity: 1;
+      
+  }
+}
