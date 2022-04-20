@@ -347,3 +347,30 @@ template {
 [hidden] {
   display: none;
 }
+
+h1, body, html {
+  @include padding-and-margin-reset();
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section, header, footer{
+  width: 100%;
+  margin: 0rem;
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
