@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-@mixin section-title-font {
+@mixin small-section-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -14,7 +14,7 @@
     line-height: 1.167;
 }
 
-@mixin normal-text-font {
+@mixin small-normal-text-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
@@ -22,7 +22,7 @@
     line-height: 1.1875;
 }
 
-@mixin card-title-font {
+@mixin small-card-title-font {
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -220,12 +220,12 @@
         .card1{
             .card1__article{
                 .card1__article__h1{
-                    @include section-title-font();
+                    @include small-section-title-font();
                     color:  $our-white;
                     text-align: center;
                 }
                 .card1__article__p{
-                    @include normal-text-font();
+                    @include small-normal-text-font();
                     color:  $our-white;
 
                     margin: 1rem 2rem 2rem 2rem;
@@ -243,7 +243,7 @@
 
     .section2{
         .section2__h1{
-            @include section-title-font();
+            @include small-section-title-font();
             text-align: center;
             color:  $our-gray;
             margin: 3rem 2rem 6.625rem 2rem;
@@ -286,7 +286,7 @@
 
                     .card2__sec1__titles{
                         .card2__sec1__titles__h1{
-                            @include card-title-font();
+                            @include small-card-title-font();
                             color:  $our-white;
                         }
                         .card2__sec1__titles__h2{
@@ -303,7 +303,7 @@
 
                 .card2__sec2{
                     .card2__sec2__p{
-                        @include normal-text-font();
+                        @include small-normal-text-font();
                         color:  $our-white;
 
                         margin: 0rem 1rem 1.5rem 1rem;
@@ -320,7 +320,7 @@
         padding-bottom: 2rem;
 
         .section3__h1{
-            @include section-title-font();
+            @include small-section-title-font();
             color:  $our-white;
             text-align: center;
             margin: auto 2rem 2rem 2rem;
@@ -353,7 +353,7 @@
                     margin: 1.5rem 2rem 1.5rem 2rem;
                 }
                 p {
-                    @include normal-text-font();
+                    @include small-normal-text-font();
                     color:  $our-white;
                     margin: auto 2rem 1rem 2rem;
                 }
@@ -390,7 +390,7 @@
                     margin: 1.5rem 2rem 1.5rem 2rem;
                 }
                 p {
-                    @include normal-text-font();
+                    @include small-normal-text-font();
                     color:  $our-white;
                     margin: auto 2rem 1rem 2rem;
                 }
@@ -405,7 +405,7 @@
     .glider-section{
         .glider-section__wrapper{
             .glider-section__title{
-                @include section-title-font();
+                @include small-section-title-font();
                 color:  $our-gray;
                 text-align: center;
                 margin: 3rem 2rem 3rem 2rem;
@@ -469,13 +469,13 @@
             flex-direction: column;
             align-items: center;
             .section4__text-box__h1{
-                @include section-title-font();
+                @include small-section-title-font();
                 color:  $our-gray;
 
                 margin: 3rem 1rem auto 1rem;
             }
             .section4__text-box__p{
-                @include normal-text-font();
+                @include small-normal-text-font();
                 color:  $our-gray;
                 text-align: center;
 
@@ -504,7 +504,7 @@
                     flex-grow: 1;
                     margin-right: .625rem;
                     padding-left: .625rem;
-                    @include normal-text-font();
+                    @include small-normal-text-font();
                 }
     
                 .section4__sch-box__search-bar__button{
@@ -562,7 +562,7 @@
             
             .footer1__content__adresses-grid{
                 text-align: center;
-                @include normal-text-font();
+                @include small-normal-text-font();
                 color:  $our-gray;
 
                 display: flex;
@@ -632,7 +632,7 @@
         flex-direction: column-reverse;
         align-items: center;
 
-        @include normal-text-font();
+        @include small-normal-text-font();
         color:  $our-white;
 
         .footer2__grid{

@@ -21,7 +21,7 @@ $phone-header-height: 4rem;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'small': 23.5rem,
+  'medium': 48rem,
+  'large': 64rem,
 ) !default;
