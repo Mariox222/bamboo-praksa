@@ -1,6 +1,6 @@
-@use '../variables';
+@import '../variables';
 
-
+ 
 @mixin padding-and-margin-reset {
     padding: 0;
     margin: 0;
@@ -65,8 +65,8 @@
 
     .header {
         //position: fixed;
-        background-color: variables.$our-green;
-        height: variables.$phone-header-height;
+        background-color:  $our-green;
+        height:  $phone-header-height;
         z-index: 10;
 
         display: flex;
@@ -74,7 +74,7 @@
 
         .header__title-container{
             display: inline-block;
-            background-color: variables.$our-white;
+            background-color:  $our-white;
             position: relative;
             margin: 0rem auto auto 2rem;
         }
@@ -214,19 +214,19 @@
     .section1{
         @include padding-and-margin-reset();
         height: 14.75rem;
-        background-color: variables.$our-gray;
+        background-color:  $our-gray;
         padding-top: 2rem;
 
         .card1{
             .card1__article{
                 .card1__article__h1{
                     @include section-title-font();
-                    color: variables.$our-white;
+                    color:  $our-white;
                     text-align: center;
                 }
                 .card1__article__p{
                     @include normal-text-font();
-                    color: variables.$our-white;
+                    color:  $our-white;
 
                     margin: 1rem 2rem 2rem 2rem;
                 }
@@ -238,14 +238,14 @@
         @include padding-and-margin-reset();
         height: 3.125rem;
         width: 100%;
-        background-color: variables.$our-green;
+        background-color:  $our-green;
     }
 
     .section2{
         .section2__h1{
             @include section-title-font();
             text-align: center;
-            color: variables.$our-gray;
+            color:  $our-gray;
             margin: 3rem 2rem 6.625rem 2rem;
         }
 
@@ -255,7 +255,7 @@
             margin: auto 2rem auto 2rem;
             
             .card2 {
-                background-color: variables.$our-gray;
+                background-color:  $our-gray;
                 margin-bottom: 5.75rem;
                 
                 display: flex;
@@ -268,7 +268,7 @@
                     text-align: center;
                     .card2__sec1-icon-container{
                         border-radius: 50%;
-                        background-color: variables.$our-green;
+                        background-color:  $our-green;
                         width: 7.5rem;
                         height: 7.5rem;
 
@@ -287,7 +287,7 @@
                     .card2__sec1__titles{
                         .card2__sec1__titles__h1{
                             @include card-title-font();
-                            color: variables.$our-white;
+                            color:  $our-white;
                         }
                         .card2__sec1__titles__h2{
                             font-family: Raleway;
@@ -295,7 +295,7 @@
                             font-weight: 400;
                             font-size: 1.5rem;
                             line-height: 1.167;
-                            color: variables.$our-white;
+                            color:  $our-white;
 
                         }
                     }
@@ -304,7 +304,7 @@
                 .card2__sec2{
                     .card2__sec2__p{
                         @include normal-text-font();
-                        color: variables.$our-white;
+                        color:  $our-white;
 
                         margin: 0rem 1rem 1.5rem 1rem;
                     }
@@ -315,13 +315,13 @@
     }
     
     .section3{
-        background-color: variables.$our-gray;
+        background-color:  $our-gray;
         padding-top: 3rem;
         padding-bottom: 2rem;
 
         .section3__h1{
             @include section-title-font();
-            color: variables.$our-white;
+            color:  $our-white;
             text-align: center;
             margin: auto 2rem 2rem 2rem;
         }
@@ -337,7 +337,7 @@
                 }
                 .card3__rectangle{
                     height: 1rem;
-                    background-color: variables.$our-green;
+                    background-color:  $our-green;
                 }
             }
             
@@ -348,13 +348,13 @@
                     font-weight: 600;
                     font-size: 1.5rem;
                     line-height: 1.167;
-                    color: variables.$our-white;
+                    color:  $our-white;
                     text-align: center;
                     margin: 1.5rem 2rem 1.5rem 2rem;
                 }
                 p {
                     @include normal-text-font();
-                    color: variables.$our-white;
+                    color:  $our-white;
                     margin: auto 2rem 1rem 2rem;
                 }
             }
@@ -374,7 +374,7 @@
                 }
                 .card3__rectangle{
                     height: 1rem;
-                    background-color: variables.$our-green;
+                    background-color:  $our-green;
                 }
             }
 
@@ -385,13 +385,13 @@
                     font-weight: 600;
                     font-size: 1.5rem;
                     line-height: 1.167;
-                    color: variables.$our-white;
+                    color:  $our-white;
                     text-align: center;
                     margin: 1.5rem 2rem 1.5rem 2rem;
                 }
                 p {
                     @include normal-text-font();
-                    color: variables.$our-white;
+                    color:  $our-white;
                     margin: auto 2rem 1rem 2rem;
                 }
             }
@@ -406,7 +406,7 @@
         .glider-section__wrapper{
             .glider-section__title{
                 @include section-title-font();
-                color: variables.$our-gray;
+                color:  $our-gray;
                 text-align: center;
                 margin: 3rem 2rem 3rem 2rem;
             }
@@ -436,7 +436,7 @@
     
                     .glide__arrow--left, .glide__arrow--right{
                         border-radius: 50%;
-                        background-color: variables.$our-white;
+                        background-color:  $our-white;
                         width: 2rem;
                         height: 2rem;
     
@@ -470,13 +470,13 @@
             align-items: center;
             .section4__text-box__h1{
                 @include section-title-font();
-                color: variables.$our-gray;
+                color:  $our-gray;
 
                 margin: 3rem 1rem auto 1rem;
             }
             .section4__text-box__p{
                 @include normal-text-font();
-                color: variables.$our-gray;
+                color:  $our-gray;
                 text-align: center;
 
                 margin: 2rem 2rem 2rem 2rem;
@@ -543,7 +543,7 @@
         margin-top: 3rem;
 
         .footer1__content{        
-            background-color: variables.$our-green;
+            background-color:  $our-green;
 
             display: flex;
             flex-direction: column;
@@ -563,7 +563,7 @@
             .footer1__content__adresses-grid{
                 text-align: center;
                 @include normal-text-font();
-                color: variables.$our-gray;
+                color:  $our-gray;
 
                 display: flex;
                 flex-direction: column;
@@ -607,7 +607,7 @@
 
                         .footer1__content__adresses-grid__follow-us__icon-box__icon{
                             border-radius: 50%;
-                            background-color: variables.$our-gray;
+                            background-color:  $our-gray;
                             width: 3rem;
                             height: 3rem;
 
@@ -625,7 +625,7 @@
     }
 
     .footer2{
-        background-color: variables.$our-gray;
+        background-color:  $our-gray;
         padding-top: 1rem;
 
         display: flex;
@@ -633,7 +633,7 @@
         align-items: center;
 
         @include normal-text-font();
-        color: variables.$our-white;
+        color:  $our-white;
 
         .footer2__grid{
             width: 7.375rem;

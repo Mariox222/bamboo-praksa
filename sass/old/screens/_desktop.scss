@@ -1,4 +1,4 @@
-@use '../variables';
+@import '../variables';
 
 
 @mixin section-title-font {
@@ -76,7 +76,7 @@
     }
     
     .site-content{
-        padding-top: variables.$desktop-header-height;
+        padding-top: $desktop-header-height;
     }
     
     button {
@@ -86,8 +86,8 @@
     
     .header {
         position: fixed;
-        background-color: variables.$our-green;
-        height: variables.$desktop-header-height;
+        background-color: $our-green;
+        height: $desktop-header-height;
         z-index: 10;
 
         display: flex;
@@ -95,7 +95,7 @@
         
         .header__title-container{
             display: inline-block;
-            background-color: variables.$our-white;
+            background-color: $our-white;
             position: relative;
             margin: 1.5rem 0rem 1.5625rem 6.75rem;
         }
@@ -165,14 +165,14 @@
     
             .card1__rectangle{
                 display: table-cell;
-                background-color: variables.$our-green;
+                background-color: $our-green;
                 height: 100%;
                 width: 2rem;
             }
     
             .card1__article{
                 display: table-cell;
-                background-color: variables.$our-gray;
+                background-color: $our-gray;
                 height: 100%;
                 width: 37.1875rem;
     
@@ -213,7 +213,7 @@
             
             .card2 {
                 flex: 0 1 34.5rem;
-                background-color: variables.$our-gray;
+                background-color: $our-gray;
                 margin: auto .75rem auto .75rem;
                 padding: 2rem 2.125rem 2rem 2rem; 
                 .card2__sec1{
@@ -238,7 +238,7 @@
                         & > * {
                             margin: .3125rem .3125rem .3125rem .3125rem;
                             @include card-title-font();
-                            color: variables.$our-white;
+                            color: $our-white;
                         }
     
                         .card2__sec1__titles__h2{
@@ -251,7 +251,7 @@
                 .card2__sec2{
                     .card2__sec2__p{
                         @include normal-text-font();
-                        color: variables.$our-white;
+                        color: $our-white;
                     }
                 }
     
@@ -260,12 +260,12 @@
     }
     
     .section3 {
-        background-color: variables.$our-gray;
+        background-color: $our-gray;
         padding-top: 4rem;
     
         .section3__h1{
             @include section-title-font();
-            color: variables.$our-white;
+            color: $our-white;
             text-align: center;
             margin: auto auto 7.3125rem auto;
         }
@@ -283,14 +283,14 @@
     
                 .section3__subsection1__article__h1{
                     @include subsec_title_font();
-                    color: variables.$our-white;
+                    color: $our-white;
                     margin: 0 0 12 0;
                     
                 }
     
                 .section3__subsection1__article__p{
                     @include normal-text-font();
-                    color: variables.$our-white;
+                    color: $our-white;
                 }
             }
     
@@ -299,7 +299,7 @@
                 .card3__rectangle{
                     width: 2rem;
                     height: 100%;
-                    background-color: variables.$our_green;
+                    background-color: $our_green;
                 }
             }
     
@@ -319,14 +319,14 @@
     
                 .section3__subsection2__article__h1{
                     @include subsec_title_font();
-                    color: variables.$our-white;
+                    color: $our-white;
                     margin: 0 0 12 0;
                     
                 }
     
                 .section3__subsection2__article__p{
                     @include normal-text-font();
-                    color: variables.$our-white;
+                    color: $our-white;
                 }
             }
     
@@ -336,7 +336,7 @@
                 .card3__rectangle{
                     width: 2rem;
                     height: 100%;
-                    background-color: variables.$our_green;
+                    background-color: $our_green;
                 }
             }
     
@@ -395,7 +395,7 @@
     
                     .glide__arrow--left, .glide__arrow--right{
                         border-radius: 50%;
-                        background-color: variables.$our-green;
+                        background-color: $our-green;
                         width: 3rem;
                         height: 3rem;
     
@@ -494,7 +494,7 @@
     }
     
     .footer1{
-        background-color: variables.$our_green;
+        background-color: $our_green;
         height: 26.5rem;
         padding-top: 3rem;
     
@@ -544,7 +544,7 @@
     
                         .footer1__content__adresses-grid__follow-us__icon-box__icon{
                             border-radius: 50%;
-                            background-color: variables.$our-gray;
+                            background-color: $our-gray;
                             width: 3rem;
                             height: 3rem;
     
@@ -561,7 +561,7 @@
     }
     
     .footer2{
-        background-color: variables.$our-gray;
+        background-color: $our-gray;
         height: 3rem;
         display: flex;
         align-items: center;
@@ -569,7 +569,7 @@
     
         .footer2__copyright{
             @include normal-text-font();
-            color: variables.$our-white;
+            color: $our-white;
             margin-left: 6.75rem;
     
             
@@ -583,7 +583,7 @@
     
             .footer2__grid__link{
                 @include normal-text-font();
-                color: variables.$our-white;
+                color: $our-white;
             }
         }
     }
