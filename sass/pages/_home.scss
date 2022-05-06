@@ -5,10 +5,10 @@
 
 
 
-.card1 {
+/* .card1 {
     width: 39.1875rem;
     height: 14.25rem;
-}
+} */
 
 .site-content {
     padding-top: $desktop-header-height;
@@ -18,196 +18,6 @@
     }
 }
 
-.header {
-    position: fixed;
-    background-color: $our-green;
-    height: $desktop-header-height;
-    z-index: 10;
-
-    display: flex;
-    justify-content: space-between;
-
-    @include respond-to('small'){
-        position: static;
-        height:  $phone-header-height;
-
-        flex-direction: row;
-    }
-
-    .header__title-container {
-        display: inline-block;
-        background-color: $our-white;
-        position: relative;
-        margin: 1.5rem 0rem 1.5625rem 6.75rem;
-
-        @include respond-to('small'){
-            margin: 0rem auto auto 2rem;
-        }
-    }
-
-    .hamburg-navbar-container {
-        margin: 1.5rem 6rem 1.875rem auto;
-
-        @include respond-to('small'){
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-
-            margin: 0;
-        }
-
-        .hamburger {
-            display: none;
-
-            @include respond-to('small'){
-                display: block;
-                margin: 1rem 1rem 1rem auto;
-                margin-right: 1rem;
-                padding: 0;
-                float: right;
-                background-color: white;
-                width: 2rem;
-                height: 2rem;
-                transition: opacity .3s;
-
-                .hamburger__line {
-                    width: 1.125rem;
-                    height: .125rem;
-                    background-color: black;
-                    margin: .3125rem auto;
-                    transition: all 0.3s ease-in-out;
-                }
-                .hamburger__line:nth-child(1){
-                    margin-top: 0.5rem;
-                }
-
-                &:hover {
-                    cursor: pointer;
-                    opacity: .5;
-                }
-
-                &.isactive{
-                    .hamburger__line:nth-child(2){
-                        opacity: 0;
-                    }
-
-                    .hamburger__line:nth-child(1){
-                        transform: translateY(.435rem) rotate(45deg);
-                    }
-
-                    .hamburger__line:nth-child(3){
-                        transform: translateY(-.435rem) rotate(-45deg);
-                    }
-                    
-                }
-            }
-        }
-
-        .navbar {
-            margin: 0;
-            display: flex;
-
-            @include respond-to('small'){
-                margin: -1.25rem 0 0 0;
-                padding: 0;
-                width: 100%;
-                height: 100vh;
-                background-color: white;
-                transition: all 2s ease-in-out;
-                display: none;
-
-                &.active{
-                    // prikazi se kad ima .active class
-                    display: block;
-                    animation: navbar-fade .4s;
-                }
-            }
-
-            ul {
-                display: flex;
-                justify-content: space-between;
-                margin-right: 2rem;
-
-                @include emph-text-font();
-                color: black;
-
-                @include respond-to('small'){
-                    flex-direction: column;
-                    overflow: hidden;
-
-                    // override default values
-                    list-style-type: none;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-                    //
-                }
-
-                li {
-                    margin: auto 1rem auto 1rem;
-
-                    @include respond-to('small'){
-                        margin-top: 2rem;
-
-                        //font
-                        font-family: Raleway;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 24px;
-                        line-height: 1.167;
-
-                        &:hover {
-                            cursor: pointer;
-                            opacity: .5;
-                        }
-                    }
-                }
-
-                @include respond-to('small'){
-                    li:nth-child(1){
-                        margin-top: 5.5rem;
-                    }
-                }
-            }
-
-            .navbar__button {
-                width: 8rem;
-                height: 2.5rem;
-                background: white;
-                border-width: 0rem;
-                margin: auto 1rem auto 1rem;
-
-                @include respond-to('small'){
-                    position: absolute;
-                    bottom: 3rem;
-                    
-                    width: 10rem;
-                    height: 3.5rem;
-                    background: #87DE87;
-                    margin-left: 2rem;
-                    border-width: 0rem;
-                }
-
-                //font
-                font-family: Raleway;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 1.125rem;
-                line-height: 1.167;
-                text-align: center;
-                text-transform: uppercase;
-
-                &:hover {
-                    cursor: pointer;
-                    opacity: .8;
-                }
-            }
-        }
-    }
-
-}
 
 @include respond-to('small'){
     .section1-image{
@@ -237,64 +47,12 @@
     }
 
     .card1 {
-        position: relative;
         left: 12.25rem;
         top: 12.875rem;
-        display: table;
-
+        
         @include respond-to('small'){
             left:0rem;
             top: 0;
-            display: block;
-            width: 100%;
-        }
-
-        .card1__rectangle {
-            display: table-cell;
-            background-color: $our-green;
-            height: 100%;
-            width: 2rem;
-
-            @include respond-to('small'){
-                display: none;
-            }
-
-        }
-
-        .card1__article {
-            display: table-cell;
-            background-color: $our-gray;
-            height: 100%;
-            width: 37.1875rem;
-
-            &>* {
-                margin: 0rem 0rem 0rem 0rem;
-            }
-
-            .card1__article__h1 {
-                @include section-title-font();
-                color: #FEFEFE;
-
-                padding: 2rem 1.5rem 1.5rem 1.5rem;
-
-                @include respond-to('small'){
-                    color:  $our-white;
-                    text-align: center;
-                    padding: 0;
-                }
-            }
-
-            .card1__article__p {
-                @include normal-text-font();
-                color: #FEFEFE;
-
-                padding: 1.5rem 1.1875rem 2rem 1.5rem;
-
-                @include respond-to('small'){
-                    color:  $our-white;
-                    margin: 0 0 0 0.5rem;
-                }
-            }
         }
     }
 }

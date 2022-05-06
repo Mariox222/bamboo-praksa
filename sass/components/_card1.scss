@@ -1,0 +1,61 @@
+.card1 {
+    width: 39.1875rem;
+    height: 14.25rem;
+    display: table;
+    position: relative;
+
+    @include respond-to('small'){
+        display: block;
+        width: 100%;
+    }
+
+    .card1__rectangle {
+        display: table-cell;
+        background-color: $our-green;
+        height: 100%;
+        width: 2rem;
+
+        @include respond-to('small'){
+            display: none;
+        }
+
+    }
+
+    .card1__article {
+        display: table-cell;
+        background-color: $our-gray;
+        height: 100%;
+        width: 37.1875rem;
+
+        &>* {
+            margin: 0rem 0rem 0rem 0rem;
+        }
+
+        h1 {
+            @include section-title-font();
+            color: #FEFEFE;
+
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+
+            @include respond-to('small'){
+                color:  $our-white;
+                text-align: center;
+                padding: 0;
+            }
+        }
+
+        p {
+            @include normal-text-font();
+            color: #FEFEFE;
+
+            padding: 1.5rem 1.1875rem 2rem 1.5rem;
+
+            @include respond-to('small'){
+                color:  $our-white;
+                margin: 0 0 0 0.5rem;
+            }
+        }
+    }
+
+
+}
