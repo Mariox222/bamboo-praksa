@@ -2,14 +2,6 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-
-
-
-/* .card1 {
-    width: 39.1875rem;
-    height: 14.25rem;
-} */
-
 .site-content {
     padding-top: $desktop-header-height;
 
@@ -57,8 +49,8 @@
     }
 }
 
-@include respond-to('small'){
-    div.intersection{
+div.intersection{
+    @include respond-to('small'){
         @include padding-and-margin-reset();
         height: 3.125rem;
         width: 100%;
@@ -82,46 +74,30 @@
 
     .card2-container {
         display: flex;
-        margin: 5.375rem 6rem 7.5rem 6rem;
         justify-content: space-between;
+        
+        margin: 5.375rem 6rem 7.5rem 6rem;
 
         @include respond-to('small'){
             flex-direction: column;
-            margin: auto 2rem auto 2rem;
             justify-content: normal;
+            
+            margin: auto 2rem auto 2rem;
         }
 
         .card2 {
-            flex: 0 1 34.5rem;
-            background-color: $our-gray;
             margin: auto .75rem auto .75rem;
             padding: 2rem 2.125rem 2rem 2rem;
 
             @include respond-to('small'){
                 padding: 0 0 0 0;
                 margin: 0 0 5.75rem 0;
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 0;
             }
 
             .card2__sec1 {
-                display: flex;
-                @include respond-to('small'){
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                }
-
                 .card2__sec1-icon-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
                     height: 7.5rem;
                     width: 7.5rem;
-                    border-radius: 50%;
-                    background-color:  $our-green;
                     margin-right: 1.5rem;
 
                     @include respond-to('small'){
@@ -129,23 +105,15 @@
                         margin-bottom: -2rem;
                         margin-right: 0;
                         svg {
-                            display: block;
                             margin: auto auto auto auto;
-                            height: 100%;
                         }
                     }
                 }
 
                 .card2__sec1__titles {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
                     .card2__sec1__titles__h1 {
                         margin: .3125rem .3125rem .3125rem .3125rem;
-                        @include card-title-font();
-                        color: $our-white;
-
+                        
                         @include respond-to('small'){
                             margin: 0;
                         }
@@ -153,28 +121,12 @@
 
                     .card2__sec1__titles__h2 {
                         margin: .3125rem .3125rem .3125rem .3125rem;
-                        @include card-title-font();
-                        color: $our-white;
-                        font-style: italic;
-                        font-weight: normal;
-
-                        @include respond-to('small'){
-                            font-family: Raleway;
-                            font-style: italic;
-                            font-weight: 400;
-                            font-size: 1.5rem;
-                            line-height: 1.167;
-                            color:  $our-white;
-                        }
                     }
                 }
             }
 
             .card2__sec2 {
                 .card2__sec2__p {
-                    @include normal-text-font();
-                    color: $our-white;
-
                     @include respond-to('small'){
                         margin: 1rem 1rem 1.5rem 1rem;
                     }
