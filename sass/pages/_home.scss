@@ -361,22 +361,14 @@ div.intersection{
     .glider-section__wrapper {
         margin-top: 5rem;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         @include respond-to('small'){
-            display: block;
             margin-top: auto;
         }
 
         .glider-section__title {
-            @include section-title-font();
             margin-bottom: 5rem;
 
             @include respond-to('small'){
-                color:  $our-gray;
-                text-align: center;
                 margin: 3rem 2rem 3rem 2rem;
             }
         }
@@ -389,7 +381,6 @@ div.intersection{
                     .glide__slides{
                         .glide__slide{
                             img {
-                                max-width: 100%;
                                 height: 20.0625rem;
                             }
                         }
@@ -400,10 +391,8 @@ div.intersection{
             .glide__arrows {
                 position: absolute;
                 bottom: 9rem;
-                vertical-align: middle;
                 z-index: 2;
 
-                width: 100%;
                 padding-left: 8.125rem;
                 padding-right: 8.125rem;
 
@@ -412,13 +401,8 @@ div.intersection{
                     padding-right: 2.625rem;
                 }
 
-                display: flex;
-                justify-content: space-between;
-
                 .glide__arrow--left,
                 .glide__arrow--right {
-                    border-radius: 50%;
-                    background-color: $our-green;
                     width: 3rem;
                     height: 3rem;
 
@@ -488,263 +472,6 @@ div.intersection{
                 margin: 2rem 2rem 2rem 2rem;
             }
             text-align: center;
-        }
-    }
-
-    .section4__sch-box {
-        display: flex;
-        justify-content: center;
-
-        .section4__sch-box__search-bar {
-            width: 43.5rem;
-            height: 4rem;
-
-            @include respond-to('small'){
-                width: 20.0625rem;
-                height: 3rem;
-            }
-
-            display: flex;
-            background: #FEFEFE;
-            border: .0625rem solid #FEFEFE;
-            box-sizing: border-box;
-            box-shadow: 0rem 0rem .5rem rgba(0, 0, 0, 0.25);
-            border-radius: .75rem;
-            padding-left: 1.25rem;
-
-            input {
-                border-width: 0rem;
-                flex-grow: 1;
-                margin-right: .625rem;
-                padding-left: .625rem;
-                @include normal-text-font();
-            }
-
-            .section4__sch-box__search-bar__button {
-                width: 7.5rem;
-                border-radius: .75rem;
-                margin: .5rem .5rem .5rem auto;
-                
-                @include respond-to('small'){
-                    width: 6.375rem;
-                    border-radius: 0rem .75rem .75rem 0rem;
-                    margin: -1px -1px 0 0;
-                }
-
-                height: 3rem;
-                background: #87DE87;
-                border-width: 0rem;
-
-                //font
-                font-family: Raleway;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 1.5rem;
-                line-height: 1.167;
-                text-align: center;
-                text-transform: uppercase;
-            }
-
-            ::placeholder {
-                font-family: Raleway;
-                font-style: italic;
-                font-weight: normal;
-                font-size: 1.125rem;
-                line-height: 1.167;
-                text-align: left;
-                color: rgba(51, 51, 51, 0.7);
-
-            }
-        }
-    }
-}
-
-.footer1 {
-    height: 26.5rem;
-    padding-top: 3rem;
-
-    @include respond-to('small'){
-        height: auto;
-        padding-top: 0;
-        
-        margin-top: 3rem;
-    }
-
-    background-color: $our_green;
-
-    .footer1__content {
-        margin: auto auto auto 6.75rem;
-
-        display: flex;
-        flex-direction: column;
-
-        @include respond-to('small'){
-            margin: auto;
-            align-items: center;    
-        }
-
-        .footer1__content__company-name {
-            background-color: white;
-            width: 13.9375rem;
-            height: 4.875rem;
-
-            margin-bottom: 2.625rem;
-
-            @include respond-to('small'){
-                margin-bottom: 3rem;
-            }
-
-            svg {
-                margin-top: 3rem;
-
-                @include respond-to('small'){
-                    margin-top: auto;
-                    
-                    margin-left: .375rem;
-                    transform: translateY(3.1rem);
-                }
-            }
-        }
-
-        .footer1__content__adresses-grid {
-            display: flex;
-
-            justify-content: flex-start;
-            column-gap: 12.5rem;
-
-            @include respond-to('small'){
-                column-gap: normal;
-
-                flex-direction: column;
-                @include normal-text-font();
-                color:  $our-gray;
-            }
-
-            .footer1__content__adresses-grid__addy {
-                @include normal-text-font();
-                display: flex;
-                flex-direction: column;
-
-                @include respond-to('small'){
-                    margin: 1rem 1rem 1rem 1rem;
-                    text-align: center;
-                    & > * {
-                        margin: 0.5rem 1rem 0.5rem 1rem;
-                    }
-                    br{
-                        display: none;
-                    }
-                    em{
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 1.5rem;    
-                    }
-                }
-
-                em {
-                    @include card-title-font();
-                }
-            }
-
-            .footer1__content__adresses-grid__follow-us {
-
-                @include respond-to('small'){
-                    margin: 1rem 1rem -1rem 1rem;
-                    
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                em {
-                    @include card-title-font();
-
-                    @include respond-to('small'){
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 1.5rem; 
-                        text-align: center;
-                    }
-                }
-
-                .footer1__content__adresses-grid__follow-us__icon-box {
-                    display: flex;
-                    justify-content: flex-start;
-
-                    column-gap: 1.5rem;
-                    margin-top: 1.125rem;
-
-                    @include respond-to('small'){
-                        flex-direction: row;
-                        justify-content: space-around;
-                        margin: 1rem 1rem 4rem 1rem;
-                    }
-
-                    .footer1__content__adresses-grid__follow-us__icon-box__icon {
-                        border-radius: 50%;
-                        background-color: $our-gray;
-                        width: 3rem;
-                        height: 3rem;
-
-                        svg {
-                            display: block;
-                            margin: auto auto auto auto;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.footer2 {
-    background-color: $our-gray;
-    align-items: center;
-    display: flex;
-    height: 3rem;
-
-    justify-content: space-between;
-
-    @include respond-to('small'){
-        height: auto;
-
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-        padding-top: 1rem;
-
-        @include normal-text-font();
-        color: $our-white;
-    }
-
-    .footer2__copyright {
-        @include normal-text-font();
-        color: $our-white;
-        margin-left: 6.75rem;
-
-        @include respond-to('small'){
-            margin-left: 0;
-            margin-bottom: 1rem;
-        }
-    }
-
-    .footer2__grid {
-        display: flex;
-
-        margin-right: 6.75rem;
-        justify-content: flex-end;
-        column-gap: 2.25rem;
-        
-        @include respond-to('small'){
-            width: 7.375rem;
-
-            justify-content: space-around;
-            column-gap: normal;
-            margin-right: 0;
-        }
-
-        a {
-            @include normal-text-font();
-            color: $our-white;
         }
     }
 }
